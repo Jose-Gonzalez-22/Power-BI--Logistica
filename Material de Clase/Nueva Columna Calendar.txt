@@ -1,0 +1,1 @@
+Inicio de Mes = DATE(YEAR(DIM_Calendario[Date]),MONTH(DIM_Calendario[Date]),1)

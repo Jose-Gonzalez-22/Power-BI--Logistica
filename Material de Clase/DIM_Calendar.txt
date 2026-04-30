@@ -1,0 +1,18 @@
+DIM_Calendario = 
+ADDCOLUMNS(
+CALENDAR (DATE(2015,1,1), DATE(2017,7,31)),
+"DateAsInteger", FORMAT ( [Date], "YYYYMMDD" ),
+"Year", YEAR ( [Date] ),
+"Monthnumber", FORMAT ( [Date], "MM" ),
+"YearMonthnumber", FORMAT ( [Date], "YYYY/MM" ),
+"YearMonthShort", FORMAT ( [Date], "YY/mmm" ),
+"MonthNameShort", FORMAT ( [Date], "mmm" ),
+"MonthNameLong", FORMAT ( [Date], "mmmm" ),
+"DayOfWeekNumber", WEEKDAY ( [Date] ),
+"año-mes", FORMAT ( [Date], "YYYY-MM" ),
+"DayOfWeek", FORMAT ( [Date], "dddd" ),
+"DayOfWeekShort", FORMAT ( [Date], "ddd" ),
+"Quarter", "Q" & FORMAT ( [Date], "Q" ),
+"MonthNumber-Day",FORMAT([Date],"m-d"),
+"YearQuarter", FORMAT ( [Date], "YYYY" ) & "/Q" & FORMAT ( [Date], "Q" ),"DayNumber",FORMAT([Date],"d"
+))
