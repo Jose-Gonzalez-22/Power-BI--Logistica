@@ -289,7 +289,7 @@ for alm in ALMACENES:
 # ============================================================
 
 fecha_actual = fecha_inicio
-fecha_fin = datetime(2023, 12, 31)
+fecha_fin = datetime(2025, 12, 31)
 ultimo_cierre_stock_cero = {pid: False for pid in prod_dict}
 ventas_pendientes_mes = {pid: 0 for pid in prod_dict}
 dias_restantes = 0
@@ -511,14 +511,8 @@ df_clientes = pd.DataFrame([{
     "id_cliente": c["id"], "Cliente": c["nombre"], "segmento": c["segmento"]
 } for c in clientes])
 
-(df_compras.to_csv("tabla_compras.csv", index=False, encoding="utf-8-sig"),
- df_ventas.to_csv("tabla_ventas.csv", index=False, encoding="utf-8-sig"),
- df_stock.to_csv("tabla_stock_inventario.csv", index=False, encoding="utf-8-sig"),
- df_productos.to_csv("tabla_productos.csv", index=False, encoding="utf-8-sig"),
- df_almacenes.to_csv("tabla_almacenes.csv", index=False, encoding="utf-8-sig"),
+(df_ventas.to_csv("tabla_ventas.csv", index=False, encoding="utf-8-sig"),
  df_clientes.to_csv("tabla_clientes.csv", index=False, encoding="utf-8-sig"))
 
 print("Simulación completada.")
-print(f"✅ Compras: {len(df_compras)}")
 print(f"✅ Ventas: {len(df_ventas)}")
-print(f"✅ Registros de inventario: {len(df_stock)}")
