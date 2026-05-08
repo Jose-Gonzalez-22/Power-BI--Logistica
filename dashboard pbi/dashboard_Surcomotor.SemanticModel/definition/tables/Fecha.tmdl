@@ -1,0 +1,170 @@
+table Fecha
+	lineageTag: b4403e2f-6dcd-4d32-a9b0-c31241a5dbd1
+	dataCategory: Time
+
+	column FechaKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 4f220bc3-5985-431a-907e-11230b47d7cb
+		summarizeBy: count
+		sourceColumn: FechaKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha
+		dataType: dateTime
+		isKey
+		formatString: Short Date
+		lineageTag: 95232d00-76d8-403a-b58f-d66ba4676035
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Año
+		dataType: int64
+		formatString: 0
+		lineageTag: 77047474-6e25-4f57-a606-be2fe89e5694
+		summarizeBy: sum
+		sourceColumn: Año
+
+		annotation SummarizationSetBy = Automatic
+
+	column Periodo
+		dataType: int64
+		formatString: 0
+		lineageTag: 018213ce-914c-4e30-9dd9-71d3fb4c7d32
+		summarizeBy: sum
+		sourceColumn: Periodo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes
+		dataType: string
+		lineageTag: d5a0aaf2-c335-4252-a427-b115fc3e9366
+		summarizeBy: none
+		sourceColumn: Mes
+		sortByColumn: 'Orden Mes'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año-Mes
+		dataType: string
+		lineageTag: abc83ef7-53b3-4024-ac2a-efec38905ac3
+		summarizeBy: none
+		sourceColumn: Año-Mes
+		sortByColumn: Periodo
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column aaaa-mmm
+		dataType: string
+		lineageTag: 152f4773-e6f8-457f-80ab-9e7da0caf87c
+		summarizeBy: none
+		sourceColumn: aaaa-mmm
+		sortByColumn: Periodo
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		dataType: string
+		lineageTag: ee97be3e-f36d-4771-a594-9c54fcfff66d
+		summarizeBy: none
+		sourceColumn: Trimestre
+		sortByColumn: 'Orden Trimestre'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dia
+		dataType: int64
+		formatString: 0
+		lineageTag: e1146fda-6bcb-42b6-831d-ace73bbf36b7
+		summarizeBy: sum
+		sourceColumn: Dia
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dia Semana'
+		dataType: string
+		lineageTag: 2b2080a2-8f1d-4767-af35-f8ed898eeb46
+		summarizeBy: none
+		sourceColumn: Dia Semana
+		sortByColumn: 'Orden Dia Semana'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Inicio de Semana'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: bf8a098c-5b81-48cb-98cf-eb61ffc390de
+		summarizeBy: none
+		sourceColumn: Inicio de Semana
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Rango Semana'
+		dataType: string
+		lineageTag: 178f77b4-58fd-4fae-9258-fa2d9abd2d8b
+		summarizeBy: none
+		sourceColumn: Rango Semana
+		sortByColumn: 'Inicio de Semana'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Orden Trimestre'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6e3cec24-8b27-4d8d-ad70-2d59b916b63b
+		summarizeBy: sum
+		sourceColumn: Orden Trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Orden Mes'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6d36566d-b433-4a8e-9898-a42815640b43
+		summarizeBy: sum
+		sourceColumn: Orden Mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Orden Dia Semana'
+		dataType: int64
+		formatString: 0
+		lineageTag: e56da89a-a3c1-4411-90e9-7f1265449e4e
+		summarizeBy: sum
+		sourceColumn: Orden Dia Semana
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fecha = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("LAPTOP-OFP910OT", "Surcomotor_DB"),
+				    dbo_Fecha = Origen{[Schema="dbo",Item="Fecha"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(dbo_Fecha,{{"Fecha", type date}, {"Inicio de Semana", type date}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

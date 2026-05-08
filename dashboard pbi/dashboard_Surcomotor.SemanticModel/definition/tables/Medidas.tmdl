@@ -1,0 +1,348 @@
+table Medidas
+	lineageTag: 2f34cabf-a1b3-443b-859e-7d2e6cf51bb9
+
+	measure 'Precio Venta' =
+			
+			LASTNONBLANKVALUE(
+			    Fecha[Fecha],
+			    INT(AVERAGE(movimientos[PrecioUnitario]))
+			)
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 558a8521-0300-4b5a-a209-a1ce6158febb
+
+	measure 'Precio Compra' =
+			
+			LASTNONBLANKVALUE(
+			    Fecha[Fecha],
+			    INT(AVERAGE(movimientos[CostoUnitario]))
+			)
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 5c990607-2f17-4e47-8278-7dac8bec7e69
+
+	measure 'Cantidad Vendida' =
+			
+			CALCULATE(
+			    [Cantidad],
+			    movimientos[TipoMovimiento] = "Venta"
+			)
+		formatString: #,0
+		lineageTag: 3c414fcc-dfd0-47f6-968a-a8d4350b9687
+
+	measure 'Cantidad Comprada' =
+			
+			CALCULATE(
+			    [Cantidad],
+			    movimientos[TipoMovimiento] = "Compra"
+			)
+		formatString: 0
+		lineageTag: ff9a763a-53cb-4e92-bb6a-fe5444c6f4ae
+
+	measure 'Costo Venta' =
+			
+			VAR PRINCIP = [Precio Compra]
+			
+			VAR SECUND = CALCULATE(
+			    [Precio Compra],
+			    DATEADD(Fecha[Fecha], -1, MONTH)
+			)
+			
+			VAR TERC = CALCULATE(
+			    [Precio Compra],
+			    DATEADD(Fecha[Fecha], -2, MONTH)
+			)
+			
+			VAR RESULT =
+			COALESCE(PRINCIP, SECUND, TERC)
+			
+			RETURN RESULT
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: e8771f12-ecb2-442d-9654-6d2efeabc465
+
+	measure 'Precio Venta_pro' =
+			
+			VAR PRINCIP = [Precio Venta]
+			
+			VAR SECUND = CALCULATE(
+			    [Precio Venta],
+			    DATEADD(Fecha[Fecha], -1, MONTH)
+			)
+			
+			VAR TERC = CALCULATE(
+			    [Precio Venta],
+			    DATEADD(Fecha[Fecha], -2, MONTH)
+			)
+			
+			VAR RESULT =
+			COALESCE(PRINCIP, SECUND, TERC)
+			
+			RETURN RESULT
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: f4623c4e-d5fa-443a-89cb-62dbfc7b3804
+
+	measure Ventas =
+			
+			CALCULATE(
+			    [Monto],
+			    movimientos[TipoMovimiento] = "Venta"
+			)
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 0c0175b1-b050-4a77-8291-aaa7abbb70d9
+
+	measure Compras =
+			
+			CALCULATE(
+			    [Monto],
+			    movimientos[TipoMovimiento] = "Compra"
+			)
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 52d27587-83a3-4cef-845d-0fdfdaa98441
+
+	measure 'Costo de Ventas' =
+			
+			CALCULATE(
+			    SUMX(movimientos, movimientos[Cantidad] * movimientos[CostoUnitario]),
+			    movimientos[TipoMovimiento] = "Venta"
+			)
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: a06fe8e4-32d8-47b9-a5d3-b4189b6fa4c6
+
+	measure 'Margen de Ventas' = DIVIDE([Ventas] - [Costo de Ventas], [Ventas], BLANK())
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 353d3396-a69d-47ba-94d9-c2ecb7494ed5
+
+	measure Cantidad = SUM(movimientos[Cantidad])
+		formatString: #,0
+		displayFolder: Medidas Auxiliares
+		lineageTag: 5f4170a5-5a83-4b76-9e45-c8c399f5df21
+
+	measure Monto = SUM(movimientos[Monto])
+		formatString: #,0.00
+		displayFolder: Medidas Auxiliares
+		lineageTag: 9ac25f98-b007-486b-9bb7-28f91e351bad
+
+	measure 'Movimientos de Inventario' = [Entradas Inventario] - [Salidas Inventario]
+		formatString: 0
+		displayFolder: Medidas Inventarios
+		lineageTag: 2e46a8c0-9664-44a2-b8c6-c330701ca6e7
+
+	measure 'Stock Inventario real' =
+			
+			CALCULATE(
+			    [Cantidad],
+			    movimientos[TipoMovimiento] = "Control"
+			)
+		formatString: 0
+		displayFolder: Medidas Inventarios
+		lineageTag: 23f0630a-73cf-4903-b994-cf01d1efa1ae
+
+	measure AUX_InventarioAnteriorFecha =
+			
+			VAR MAX_FECHA = MAX(Fecha[Fecha])
+			
+			VAR ABSMIN_FECHA =
+			CALCULATE(
+			    MIN(Fecha[Fecha]),
+			    ALL(Fecha)
+			)
+			
+			VAR MEDIDA =
+			CALCULATE(
+			    LASTNONBLANK(
+			        Fecha[Fecha],
+			        CALCULATE(
+			            [Stock Inventario real],
+			            DATEADD(Fecha[Fecha], -1, DAY)
+			        )
+			    ),
+			    FILTER(
+			        ALL(Fecha),
+			        Fecha[Fecha] <= MAX_FECHA
+			    )
+			)
+			
+			RETURN COALESCE(MEDIDA-1, ABSMIN_FECHA)
+		formatString: Short Date
+		displayFolder: Medidas Auxiliares
+		lineageTag: 923ee20c-e6f3-46e5-8db1-c3f0cb99f1ec
+
+	measure AUX_MaximaFechaActual = MAX(Fecha[Fecha])
+		formatString: General Date
+		displayFolder: Medidas Auxiliares
+		lineageTag: aa7ff268-a6ad-4285-934f-536232b5cea0
+
+	measure 'Movimientos acumulados' =
+			
+			VAR MAX_FECHA = [AUX_MaximaFechaActual]
+			
+			VAR ULTIMO_INVENTARIO_FECHA = [AUX_InventarioAnteriorFecha]
+			
+			VAR MEDIDA =
+			CALCULATE(
+			    [Movimientos de Inventario],
+			    FILTER(
+			        ALL(Fecha),
+			        Fecha[Fecha] >= ULTIMO_INVENTARIO_FECHA + 1
+			        && Fecha[Fecha] <= MAX_FECHA
+			    )
+			)
+			
+			RETURN MEDIDA
+		formatString: #,0
+		displayFolder: Medidas Inventarios
+		lineageTag: 007bd2c1-b2cd-4ce3-8123-6c74457f389e
+
+	measure AUX_UltimoInventario =
+			
+			VAR FECHA_ULTIMOINVENTARIO = [AUX_InventarioAnteriorFecha]
+			
+			VAR MEDIDA =
+			CALCULATE(
+			    [Stock Inventario real],
+			    FILTER(
+			        ALL(Fecha),
+			        Fecha[Fecha] == FECHA_ULTIMOINVENTARIO
+			    )
+			)
+			
+			RETURN MEDIDA
+		formatString: #,0
+		displayFolder: Medidas Auxiliares
+		lineageTag: 33209e38-b170-4b0d-b5e3-db6fb3b4b1bb
+
+	measure 'Stock Inventario Teórico' =
+			
+			[AUX_UltimoInventario] + [Movimientos acumulados]
+		formatString: #,0
+		displayFolder: Medidas Inventarios
+		lineageTag: 65a76b48-ab63-4c77-86b9-8743560cd86b
+
+	measure 'Salidas Inventario' =
+			
+			CALCULATE(
+			    [Cantidad],
+			    movimientos[TipoMovimiento] = "Salida"
+			)
+		formatString: #,0
+		lineageTag: 7e13ace2-0180-430f-9aa0-c9b4a33b0fa0
+
+	measure 'Entradas Inventario' =
+			
+			CALCULATE(
+			    [Cantidad],
+			    movimientos[TipoMovimiento] = "Entrada"
+			)
+		formatString: #,0
+		lineageTag: 2ec9e530-a664-48f0-8f7b-5224c256e618
+
+	measure AUX_InventarioAnteriorFecha_predicciones =
+			
+			VAR MAX_FECHA = MAX(Fecha[Fecha])
+			
+			VAR ABSMIN_FECHA =
+			CALCULATE(
+			    MIN(Fecha[Fecha]),
+			    ALL(Fecha)
+			)
+			
+			VAR MEDIDA =
+			CALCULATE(
+			    LASTNONBLANK(
+			        Fecha[Fecha],
+			        CALCULATE(
+			            [Stock Inventario predecido (NO DIARIO)],
+			            DATEADD(Fecha[Fecha], -1, DAY)
+			        )
+			    ),
+			    FILTER(
+			        ALL(Fecha),
+			        Fecha[Fecha] <= MAX_FECHA
+			    )
+			)
+			
+			RETURN COALESCE(MEDIDA-1, ABSMIN_FECHA)
+		formatString: Short Date
+		displayFolder: Medidas Auxiliares
+		lineageTag: 4d817381-3d8b-40a6-b0cd-e6d8af9e6316
+
+	measure AUX_UltimoInventario_predicciones =
+			
+			VAR FECHA_ULTIMOINVENTARIO = [AUX_InventarioAnteriorFecha_predicciones]
+			
+			VAR MEDIDA =
+			CALCULATE(
+			    [Stock Inventario predecido (NO DIARIO)],
+			    FILTER(
+			        ALL(Fecha),
+			        Fecha[Fecha] == FECHA_ULTIMOINVENTARIO
+			    )
+			)
+			
+			RETURN MEDIDA
+		formatString: 0
+		displayFolder: Medidas Auxiliares
+		lineageTag: 7b23f388-8863-4ac5-bfdd-89cc83a02faf
+
+	measure AUX_MinimaFechaActual = MIN(Fecha[Fecha])
+		formatString: General Date
+		displayFolder: Medidas Auxiliares
+		lineageTag: 6053dd63-07d9-46e3-8b69-b2dce76f2cef
+
+	measure 'Inventario Final' =
+			
+			VAR FILTRO_FECHA = [AUX_MaximaFechaActual]
+			
+			VAR MEDIDA =
+			CALCULATE(
+			    [Stock Inventario Teórico],
+			    FILTER(
+			        Fecha,
+			        Fecha[Fecha] == FILTRO_FECHA
+			    )
+			)
+			
+			RETURN MEDIDA
+		formatString: #,0
+		displayFolder: Medidas Inventarios
+		lineageTag: 0af17660-1694-4175-86a9-030b6ae7c436
+
+	measure 'Inventario Inicial' =
+			
+			VAR FILTRO_FECHA = [AUX_MinimaFechaActual]
+			
+			VAR MEDIDA =
+			CALCULATE(
+			    [Stock Inventario Teórico],
+			    FILTER(
+			        Fecha,
+			        Fecha[Fecha] == FILTRO_FECHA
+			    )
+			)
+			
+			RETURN MEDIDA
+		formatString: #,0
+		displayFolder: Medidas Inventarios
+		lineageTag: 9b89b0db-6ba4-48ec-8bd0-2478f48881c2
+
+	measure 'Inventario Promedio' =
+			
+			DIVIDE([Inventario Inicial] + [Inventario Final], 2, BLANK())
+		formatString: #,0
+		displayFolder: Medidas Inventarios
+		lineageTag: ebd82d38-7e1e-4afc-8746-004164d090fa
+
+	measure 'Rotacion Inventario' = DIVIDE([Costo de Ventas], [Inventario Promedio], BLANK())
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: bd855452-93dc-45c6-98e2-29c545343f6d
+
+	partition Medidas = m
+		mode: import
+		source =
+				let
+				    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Columna1 = _t]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Columna1", type text}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Columna1"})
+				in
+				    #"Columnas quitadas"
+
+	annotation PBI_ResultType = Table
+

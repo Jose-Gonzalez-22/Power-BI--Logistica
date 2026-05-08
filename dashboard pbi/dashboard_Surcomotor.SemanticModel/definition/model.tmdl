@@ -1,0 +1,25 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PY
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["tabla_almacenes","tabla_clientes","tabla_productos","movimientos","predicciones_movimientos","Fecha","Medidas","Medidas Predicciones"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table tabla_almacenes
+ref table tabla_clientes
+ref table tabla_productos
+ref table movimientos
+ref table Fecha
+ref table Medidas
+ref table predicciones_movimientos
+ref table 'Medidas Predicciones'
+
+ref cultureInfo es-ES
+

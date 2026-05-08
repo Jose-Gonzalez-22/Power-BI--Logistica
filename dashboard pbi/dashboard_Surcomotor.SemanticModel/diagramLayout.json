@@ -1,0 +1,125 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 884,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 954.00000143051147,
+            "y": 255.01686184023913
+          },
+          "nodeIndex": "tabla_almacenes",
+          "nodeLineageTag": "e392e1fc-e0dc-48d7-9523-7674353fa4bf",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1000.6145388191794,
+            "y": 0
+          },
+          "nodeIndex": "tabla_clientes",
+          "nodeLineageTag": "17b86a0d-12c7-48d0-9f70-b5441397c2c0",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "tabla_productos",
+          "nodeLineageTag": "59f00c64-28ef-42eb-a4b7-b7a42da5cfa1",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 318.04129875265107
+          },
+          "nodeIndex": "Fecha",
+          "nodeLineageTag": "b4403e2f-6dcd-4d32-a9b0-c31241a5dbd1",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1284.6145388191794,
+            "y": 412.041298752651
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "2f34cabf-a1b3-443b-859e-7d2e6cf51bb9",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 615.8052332768608,
+            "y": 0
+          },
+          "nodeIndex": "movimientos",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 613.61453881917942,
+            "y": 426.02064937632554
+          },
+          "nodeIndex": "predicciones_movimientos",
+          "nodeLineageTag": "ebed2ddd-796a-48fe-9a23-c27a04e366a7",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1568.6145388191794,
+            "y": 311.01032468816277
+          },
+          "nodeIndex": "Medidas Predicciones",
+          "nodeLineageTag": "52f1609d-a1ef-44fd-84a0-96f4f69f0499",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

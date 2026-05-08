@@ -1,0 +1,115 @@
+table predicciones_movimientos
+	lineageTag: ebed2ddd-796a-48fe-9a23-c27a04e366a7
+
+	column id_movimiento
+		dataType: int64
+		formatString: 0
+		lineageTag: 9e5a75e7-54a2-4afd-91e7-f36abcc1098a
+		summarizeBy: sum
+		sourceColumn: id_movimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	column TipoMovimiento
+		dataType: string
+		lineageTag: f88cc1a7-8961-406a-bcec-82e06aa6ddc1
+		summarizeBy: none
+		sourceColumn: TipoMovimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6181d819-f2ad-40e0-94cf-6a71b1ebbddf
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Entidad
+		dataType: string
+		lineageTag: d0e1a0d7-b27c-4bfc-a8cf-7f80fcbd5e50
+		summarizeBy: none
+		sourceColumn: Entidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Almacen
+		dataType: string
+		lineageTag: bcbf7453-52a2-4b5d-b9b0-4fe6541c31d0
+		summarizeBy: none
+		sourceColumn: Almacen
+
+		annotation SummarizationSetBy = Automatic
+
+	column Producto
+		dataType: string
+		lineageTag: 31e40ad3-e458-4671-b05d-9200d0945046
+		summarizeBy: none
+		sourceColumn: Producto
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cantidad
+		dataType: int64
+		formatString: 0
+		lineageTag: 11a98133-f7ec-4506-9c37-e926affcdb19
+		summarizeBy: sum
+		sourceColumn: Cantidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column CostoUnitario
+		dataType: double
+		lineageTag: 6c19d2d9-f5a4-4a42-952d-446b75e974bc
+		summarizeBy: sum
+		sourceColumn: CostoUnitario
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PrecioUnitario
+		dataType: double
+		lineageTag: 2d868289-7dae-4fe4-bffe-e7b0e9a4b448
+		summarizeBy: sum
+		sourceColumn: PrecioUnitario
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Monto
+		dataType: double
+		lineageTag: e6bc4901-3ab3-451d-a406-8690eef61c6f
+		summarizeBy: sum
+		sourceColumn: Monto
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Vendedor
+		dataType: string
+		lineageTag: 9b688298-ce33-4564-a7d4-e7f69920ad14
+		summarizeBy: none
+		sourceColumn: Vendedor
+
+		annotation SummarizationSetBy = Automatic
+
+	partition predicciones_movimientos = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("LAPTOP-OFP910OT", "Surcomotor_DB"),
+				    dbo_predicciones_movimientos = Origen{[Schema="dbo",Item="predicciones_movimientos"]}[Data]
+				in
+				    dbo_predicciones_movimientos
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

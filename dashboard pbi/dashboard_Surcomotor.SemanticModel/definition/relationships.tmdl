@@ -1,0 +1,28 @@
+relationship AutoDetected_51f87d2a-9d79-4cec-911b-b1b11248b58d
+	fromColumn: movimientos.Almacen
+	toColumn: tabla_almacenes.almacen
+
+relationship 9f938b30-9303-e7ca-beaa-d61cb3c10c6c
+	fromColumn: movimientos.Fecha
+	toColumn: Fecha.Fecha
+
+relationship 33a9fbad-a2d1-9820-2ed7-0add95c00eb7
+	fromColumn: movimientos.Producto
+	toColumn: tabla_productos.DESCRIPCIÓN
+
+relationship ba8a004b-ec3d-dda2-5151-7e6470c84d55
+	fromColumn: movimientos.Entidad
+	toColumn: tabla_clientes.Cliente
+
+relationship AutoDetected_a8571a08-e282-40c9-a2cb-3d7283baf134
+	fromColumn: predicciones_movimientos.Almacen
+	toColumn: tabla_almacenes.almacen
+
+relationship ee448af2-5526-29dd-92f0-4d73eb8765c7
+	fromColumn: predicciones_movimientos.Fecha
+	toColumn: Fecha.Fecha
+
+relationship f7a8f5b1-2593-64bc-b10e-bc1c87694be9
+	fromColumn: predicciones_movimientos.Producto
+	toColumn: tabla_productos.DESCRIPCIÓN
+

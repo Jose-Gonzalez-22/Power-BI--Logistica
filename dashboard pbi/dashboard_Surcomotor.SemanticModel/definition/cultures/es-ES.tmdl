@@ -1,0 +1,5648 @@
+cultureInfo es-ES
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "tabla_almacene": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_almacenes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tabla almacene": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tabla_almacenes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_almacene.id_almacen": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_almacenes",
+			          "ConceptualProperty": "id_almacen"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id almacen": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_almacen": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification almacen": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity almacen": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier almacen": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential almacen": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_almacene.almacen": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_almacenes",
+			          "ConceptualProperty": "almacen"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "almacen": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_almacene.capacidad_vehiculo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_almacenes",
+			          "ConceptualProperty": "Capacidad Vehiculos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "capacidad vehiculo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_almacene.capacidad_repuesto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_almacenes",
+			          "ConceptualProperty": "Capacidad Repuestos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "capacidad repuesto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_almacene.ubicacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_almacenes",
+			          "ConceptualProperty": "ubicacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ubicacion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_clientes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tabla cliente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tabla_clientes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_cliente.id_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_clientes",
+			          "ConceptualProperty": "id_cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id cliente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_cliente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_cliente.cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_clientes",
+			          "ConceptualProperty": "Cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cliente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_cliente.segmento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_clientes",
+			          "ConceptualProperty": "segmento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "segmento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_producto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_productos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tabla producto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tabla_productos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_producto.id_producto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_productos",
+			          "ConceptualProperty": "ID_PRODUCTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id producto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_PRODUCTO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification producto": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity producto": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier producto": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential producto": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_producto.descripción": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_productos",
+			          "ConceptualProperty": "DESCRIPCIÓN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "descripción": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_producto.nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_productos",
+			          "ConceptualProperty": "NOMBRE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_producto.tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_productos",
+			          "ConceptualProperty": "TIPO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_producto.foto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tabla_productos",
+			          "ConceptualProperty": "FOTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "foto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "movimiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "movimientos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "movimiento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "movimiento.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "movimientos",
+			          "ConceptualProperty": "Fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "movimiento.almacen": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "movimientos",
+			          "ConceptualProperty": "Almacen"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "almacen": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "movimiento.producto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "movimientos",
+			          "ConceptualProperty": "Producto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "producto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "movimiento.vendedor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "movimientos",
+			          "ConceptualProperty": "Vendedor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vendedor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "movimiento.id_movimiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "movimientos",
+			          "ConceptualProperty": "id_movimiento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id movimiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_movimiento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification movimiento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity movimiento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier movimiento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential movimiento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "movimiento.tipo_movimiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "movimientos",
+			          "ConceptualProperty": "TipoMovimiento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo movimiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TipoMovimiento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "movimiento.entidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "movimientos",
+			          "ConceptualProperty": "Entidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "entidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "movimiento.cantidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "movimientos",
+			          "ConceptualProperty": "Cantidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "movimiento.monto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "movimientos",
+			          "ConceptualProperty": "Monto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "monto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "movimiento.costo_unitario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "movimientos",
+			          "ConceptualProperty": "CostoUnitario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "costo unitario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CostoUnitario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "movimiento.precio_unitario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "movimientos",
+			          "ConceptualProperty": "PrecioUnitario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio unitario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PrecioUnitario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        }
+			      ]
+			    },
+			    "fecha.fecha_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "FechaKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FechaKey": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "fecha solution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "fecha explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "fecha basis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "fecha recipe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "fecha interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "fecha resolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "fecha answer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "fecha mean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "fecha secret": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "fecha source": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "fecha.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "Fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fecha.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fecha.periodo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "Periodo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "periodo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fecha.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fecha.añome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "Año-Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año-me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "año me": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "fecha.aaaammm": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "aaaa-mmm"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "aaaa-mmm": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aaaa mmm": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "fecha.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fecha.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fecha.dia_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "Dia Semana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia semana": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fecha.inicio_de_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "Inicio de Semana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "inicio de semana": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fecha.rango_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "Rango Semana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rango semana": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fecha.orden_trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "Orden Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "orden trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fecha.orden_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "Orden Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "orden me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fecha.orden_dia_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fecha",
+			          "ConceptualProperty": "Orden Dia Semana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "orden dia semana": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.precio_venta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Precio Venta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio venta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.precio_compra": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Precio Compra"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio compra": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.cantidad_vendida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Cantidad Vendida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad vendida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Cant. Vend.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Ventas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.cantidad_comprada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Cantidad Comprada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad comprada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Compras": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.costo_venta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Costo Venta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "costo venta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.precio_Venta_pro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Precio Venta_pro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio Venta_pro": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.ventas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Ventas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ventas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.compras": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Compras"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "compras": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.costo_de_ventas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Costo de Ventas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "costo de ventas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.margen_de_ventas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Margen de Ventas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "margen de ventas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Margen": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.cantidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Cantidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.monto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Monto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "monto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.movimientos_de_inventario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Movimientos de Inventario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "movimientos de inventario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.stock_inventario_real": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Stock Inventario real"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stock inventario real": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "inventory inventario real": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Stock real": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.AUX_inventario_anterior_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "AUX_InventarioAnteriorFecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "AUX inventario anterior fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AUX_InventarioAnteriorFecha": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "medida.AUX_maxima_fecha_actual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "AUX_MaximaFechaActual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "AUX maxima fecha actual": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AUX_MaximaFechaActual": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aux maximum fecha real": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "aux maximum fecha existent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "aux maximum fecha tangible": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "medida.movimientos_acumulados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Movimientos acumulados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "movimientos acumulados": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.AUX_ultimo_inventario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "AUX_UltimoInventario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "AUX ultimo inventario": {}
+			        },
+			        {
+			          "AUX_UltimoInventario": {
+			            "Type": "Noun",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "último inventario": {
+			            "LastModified": "2026-05-07T11:48:06.83Z"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.stock_inventario_teórico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Stock Inventario Teórico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stock inventario teórico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "inventory inventario teórico": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Stock Teórico": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.salidas_inventario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Salidas Inventario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "salidas inventario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.entradas_inventario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Entradas Inventario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "entradas inventario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.AUX_inventario_anterior_fecha_predicciones": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "AUX_InventarioAnteriorFecha_predicciones"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "AUX inventario anterior fecha predicciones": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AUX_InventarioAnteriorFecha_predicciones": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "medida.AUX_ultimo_inventario_predicciones": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "AUX_UltimoInventario_predicciones"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "AUX ultimo inventario predicciones": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AUX_UltimoInventario_predicciones": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.AUX_minima_fecha_actual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "AUX_MinimaFechaActual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "AUX minima fecha actual": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AUX_MinimaFechaActual": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aux minimum fecha real": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "aux minimum fecha existent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "aux minimum fecha tangible": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "medida.inventario_final": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Inventario Final"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "inventario final": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "inventario decider": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        }
+			      ]
+			    },
+			    "medida.inventario_inicial": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Inventario Inicial"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "inventario inicial": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.inventario_promedio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Inventario Promedio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "inventario promedio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.rotacion_inventario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Rotacion Inventario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rotacion inventario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "predicciones_movimientos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "predicciones movimiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prediccione movimiento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "predicciones_movimientos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento.id_movimiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "predicciones_movimientos",
+			          "ConceptualProperty": "id_movimiento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id movimiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_movimiento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification movimiento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity movimiento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier movimiento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential movimiento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento.tipo_movimiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "predicciones_movimientos",
+			          "ConceptualProperty": "TipoMovimiento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo movimiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TipoMovimiento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "predicciones_movimientos",
+			          "ConceptualProperty": "Fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "predicciones_movimiento.entidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "predicciones_movimientos",
+			          "ConceptualProperty": "Entidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "entidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento.almacen": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "predicciones_movimientos",
+			          "ConceptualProperty": "Almacen"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "almacen": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento.producto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "predicciones_movimientos",
+			          "ConceptualProperty": "Producto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "producto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento.cantidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "predicciones_movimientos",
+			          "ConceptualProperty": "Cantidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento.costo_unitario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "predicciones_movimientos",
+			          "ConceptualProperty": "CostoUnitario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "costo unitario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CostoUnitario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento.precio_unitario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "predicciones_movimientos",
+			          "ConceptualProperty": "PrecioUnitario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio unitario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PrecioUnitario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento.monto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "predicciones_movimientos",
+			          "ConceptualProperty": "Monto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "monto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento.vendedor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "predicciones_movimientos",
+			          "ConceptualProperty": "Vendedor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vendedor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medidas prediccione": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "medida prediccione": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione.cantidad_predecida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones",
+			          "ConceptualProperty": "Cantidad Predecida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad predecida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione.cantidad_comprada_predecida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones",
+			          "ConceptualProperty": "Cantidad Comprada predecida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad comprada predecida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione.cantidad_vendida_predecida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones",
+			          "ConceptualProperty": "Cantidad Vendida predecida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad vendida predecida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione.salidas_inventario_predecidas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones",
+			          "ConceptualProperty": "Salidas Inventario predecidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "salidas inventario predecidas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione.entradas_inventario_predecidas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones",
+			          "ConceptualProperty": "Entradas Inventario predecidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "entradas inventario predecidas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione.movimientos_de_inventario_predecidos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones",
+			          "ConceptualProperty": "Movimientos de Inventario predecidos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "movimientos de inventario predecidos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione.stock_inventario_predecido_NO_DIARIO": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones",
+			          "ConceptualProperty": "Stock Inventario predecido (NO DIARIO)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stock inventario predecido (NO DIARIO)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "stock inventario predecido": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione.movimientos_acumulados_predecidos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones",
+			          "ConceptualProperty": "Movimientos acumulados predecidos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "movimientos acumulados predecidos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione.stock_inventario_predecido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones",
+			          "ConceptualProperty": "Stock Inventario predecido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stock inventario predecido": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "inventory inventario predecido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione.montos_predecidos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones",
+			          "ConceptualProperty": "Montos predecidos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "montos predecidos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione.ventas_predecidas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones",
+			          "ConceptualProperty": "Ventas predecidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ventas predecidas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione.costo_de_ventas_predecidos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones",
+			          "ConceptualProperty": "Costo de Ventas predecidos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "costo de ventas predecidos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_prediccione.compras_predecidas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas Predicciones",
+			          "ConceptualProperty": "Compras predecidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "compras predecidas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "predicciones_movimiento_has_tabla_producto": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "tabla_producto": {
+			          "Target": {
+			            "Entity": "tabla_producto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "tabla_producto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_tabla_productos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_producto"
+			            },
+			            "Object": {
+			              "Role": "predicciones_movimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_productos_have_predicciones_movimientos"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_fecha1": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_fechas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "predicciones_movimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_predicciones_movimientos"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_tabla_almacene": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "tabla_almacene": {
+			          "Target": {
+			            "Entity": "tabla_almacene"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "tabla_almacene"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_tabla_almacenes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_almacene"
+			            },
+			            "Object": {
+			              "Role": "predicciones_movimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_almacenes_have_predicciones_movimientos"
+			        }
+			      ]
+			    },
+			    "movimiento_has_tabla_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "tabla_cliente": {
+			          "Target": {
+			            "Entity": "tabla_cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "tabla_cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_tabla_clientes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_cliente"
+			            },
+			            "Object": {
+			              "Role": "movimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_clientes_have_movimientos"
+			        }
+			      ]
+			    },
+			    "movimiento_has_tabla_producto": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "tabla_producto": {
+			          "Target": {
+			            "Entity": "tabla_producto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "tabla_producto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_tabla_productos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_producto"
+			            },
+			            "Object": {
+			              "Role": "movimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_productos_have_movimientos"
+			        }
+			      ]
+			    },
+			    "movimiento_has_fecha1": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_fechas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "movimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_movimientos"
+			        }
+			      ]
+			    },
+			    "movimiento_has_tabla_almacene": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "tabla_almacene": {
+			          "Target": {
+			            "Entity": "tabla_almacene"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "tabla_almacene"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_tabla_almacenes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_almacene"
+			            },
+			            "Object": {
+			              "Role": "movimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_almacenes_have_movimientos"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medidas_prediccione_compras_predecidas": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medidas_prediccione.compras_predecidas": {
+			          "Target": {
+			            "Entity": "medidas_prediccione.compras_predecidas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medidas_prediccione.compras_predecidas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_compras_predecidas"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medidas_prediccione_costo_de_ventas_predecidos": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medidas_prediccione.costo_de_ventas_predecidos": {
+			          "Target": {
+			            "Entity": "medidas_prediccione.costo_de_ventas_predecidos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medidas_prediccione.costo_de_ventas_predecidos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_costo_de_ventas_predecidos"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medidas_prediccione_ventas_predecidas": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medidas_prediccione.ventas_predecidas": {
+			          "Target": {
+			            "Entity": "medidas_prediccione.ventas_predecidas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medidas_prediccione.ventas_predecidas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_ventas_predecidas"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medidas_prediccione_montos_predecidos": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medidas_prediccione.montos_predecidos": {
+			          "Target": {
+			            "Entity": "medidas_prediccione.montos_predecidos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medidas_prediccione.montos_predecidos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_montos_predecidos"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medidas_prediccione_stock_inventario_predecido": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medidas_prediccione.stock_inventario_predecido": {
+			          "Target": {
+			            "Entity": "medidas_prediccione.stock_inventario_predecido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medidas_prediccione.stock_inventario_predecido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_stock_inventario_predecido"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medidas_prediccione_movimientos_acumulados_predecidos": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medidas_prediccione.movimientos_acumulados_predecidos": {
+			          "Target": {
+			            "Entity": "medidas_prediccione.movimientos_acumulados_predecidos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medidas_prediccione.movimientos_acumulados_predecidos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_movimientos_acumulados_predecidos"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medidas_prediccione_stock_inventario_predecido_NO_DIARIO": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medidas_prediccione.stock_inventario_predecido_NO_DIARIO": {
+			          "Target": {
+			            "Entity": "medidas_prediccione.stock_inventario_predecido_NO_DIARIO"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medidas_prediccione.stock_inventario_predecido_NO_DIARIO"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_stock_inventario_predecido_NO_DIARIO"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medidas_prediccione_movimientos_de_inventario_predecidos": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medidas_prediccione.movimientos_de_inventario_predecidos": {
+			          "Target": {
+			            "Entity": "medidas_prediccione.movimientos_de_inventario_predecidos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medidas_prediccione.movimientos_de_inventario_predecidos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_movimientos_de_inventario_predecidos"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medidas_prediccione_entradas_inventario_predecidas": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medidas_prediccione.entradas_inventario_predecidas": {
+			          "Target": {
+			            "Entity": "medidas_prediccione.entradas_inventario_predecidas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medidas_prediccione.entradas_inventario_predecidas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_entradas_inventario_predecidas"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medidas_prediccione_salidas_inventario_predecidas": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medidas_prediccione.salidas_inventario_predecidas": {
+			          "Target": {
+			            "Entity": "medidas_prediccione.salidas_inventario_predecidas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medidas_prediccione.salidas_inventario_predecidas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_salidas_inventario_predecidas"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medidas_prediccione_cantidad_vendida_predecida": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medidas_prediccione.cantidad_vendida_predecida": {
+			          "Target": {
+			            "Entity": "medidas_prediccione.cantidad_vendida_predecida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medidas_prediccione.cantidad_vendida_predecida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_cantidad_vendida_predecida"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medidas_prediccione_cantidad_comprada_predecida": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medidas_prediccione.cantidad_comprada_predecida": {
+			          "Target": {
+			            "Entity": "medidas_prediccione.cantidad_comprada_predecida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medidas_prediccione.cantidad_comprada_predecida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_cantidad_comprada_predecida"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medidas_prediccione_cantidad_predecida": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medidas_prediccione.cantidad_predecida": {
+			          "Target": {
+			            "Entity": "medidas_prediccione.cantidad_predecida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medidas_prediccione.cantidad_predecida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_cantidad_predecida"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_vendedor": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "predicciones_movimiento.vendedor": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento.vendedor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "predicciones_movimiento.vendedor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_vendedors"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_monto": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "predicciones_movimiento.monto": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento.monto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "predicciones_movimiento.monto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_monto"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_precio_unitario": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "predicciones_movimiento.precio_unitario": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento.precio_unitario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "predicciones_movimiento.precio_unitario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_precio_unitarios"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_costo_unitario": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "predicciones_movimiento.costo_unitario": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento.costo_unitario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "predicciones_movimiento.costo_unitario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_costo_unitarios"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_cantidad": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "predicciones_movimiento.cantidad": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento.cantidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "predicciones_movimiento.cantidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_cantidads"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_entidad": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "predicciones_movimiento.entidad": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento.entidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "predicciones_movimiento.entidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_entidads"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "predicciones_movimiento.fecha": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento.fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "predicciones_movimiento.fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_fechas1"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_tipo_movimiento": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "predicciones_movimiento.tipo_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento.tipo_movimiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "predicciones_movimiento.tipo_movimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_tipo_movimientos"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_id_movimiento": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "predicciones_movimiento.id_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento.id_movimiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "predicciones_movimiento.id_movimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_id_movimientos"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_rotacion_inventario": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.rotacion_inventario": {
+			          "Target": {
+			            "Entity": "medida.rotacion_inventario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.rotacion_inventario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_rotacion_inventario"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_inventario_promedio": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.inventario_promedio": {
+			          "Target": {
+			            "Entity": "medida.inventario_promedio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.inventario_promedio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_inventario_promedio"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_inventario_inicial": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.inventario_inicial": {
+			          "Target": {
+			            "Entity": "medida.inventario_inicial"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.inventario_inicial"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_inventario_inicial"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_inventario_final": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.inventario_final": {
+			          "Target": {
+			            "Entity": "medida.inventario_final"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.inventario_final"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_inventario_final"
+			        }
+			      ]
+			    },
+			    "fecha_has_medida_AUX_minima_fecha_actual": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "medida.AUX_minima_fecha_actual": {
+			          "Target": {
+			            "Entity": "medida.AUX_minima_fecha_actual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "medida.AUX_minima_fecha_actual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_AUX_minima_fecha_actual"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medida_AUX_ultimo_inventario_predicciones": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medida.AUX_ultimo_inventario_predicciones": {
+			          "Target": {
+			            "Entity": "medida.AUX_ultimo_inventario_predicciones"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.AUX_ultimo_inventario_predicciones"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_AUX_ultimo_inventario_predicciones"
+			        }
+			      ]
+			    },
+			    "predicciones_movimiento_has_medida_AUX_inventario_anterior_fecha_predicciones": {
+			      "Binding": {
+			        "ConceptualEntity": "predicciones_movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "predicciones_movimiento": {
+			          "Target": {
+			            "Entity": "predicciones_movimiento"
+			          }
+			        },
+			        "medida.AUX_inventario_anterior_fecha_predicciones": {
+			          "Target": {
+			            "Entity": "medida.AUX_inventario_anterior_fecha_predicciones"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "predicciones_movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.AUX_inventario_anterior_fecha_predicciones"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "predicciones_movimientos_have_AUX_inventario_anterior_fecha_predicciones"
+			        }
+			      ]
+			    },
+			    "fecha_has_medida_AUX_inventario_anterior_fecha_predicciones": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "medida.AUX_inventario_anterior_fecha_predicciones": {
+			          "Target": {
+			            "Entity": "medida.AUX_inventario_anterior_fecha_predicciones"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "medida.AUX_inventario_anterior_fecha_predicciones"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_AUX_inventario_anterior_fecha_predicciones"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_entradas_inventario": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.entradas_inventario": {
+			          "Target": {
+			            "Entity": "medida.entradas_inventario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.entradas_inventario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_entradas_inventario"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_salidas_inventario": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.salidas_inventario": {
+			          "Target": {
+			            "Entity": "medida.salidas_inventario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.salidas_inventario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_salidas_inventario"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_stock_inventario_teórico": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.stock_inventario_teórico": {
+			          "Target": {
+			            "Entity": "medida.stock_inventario_teórico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.stock_inventario_teórico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_stock_inventario_teórico"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_AUX_ultimo_inventario": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.AUX_ultimo_inventario": {
+			          "Target": {
+			            "Entity": "medida.AUX_ultimo_inventario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.AUX_ultimo_inventario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_AUX_ultimo_inventario"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_movimientos_acumulados": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.movimientos_acumulados": {
+			          "Target": {
+			            "Entity": "medida.movimientos_acumulados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.movimientos_acumulados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_movimientos_acumulados"
+			        }
+			      ]
+			    },
+			    "fecha_has_medida_AUX_maxima_fecha_actual": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "medida.AUX_maxima_fecha_actual": {
+			          "Target": {
+			            "Entity": "medida.AUX_maxima_fecha_actual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "medida.AUX_maxima_fecha_actual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_AUX_maxima_fecha_actual"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_AUX_inventario_anterior_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.AUX_inventario_anterior_fecha": {
+			          "Target": {
+			            "Entity": "medida.AUX_inventario_anterior_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.AUX_inventario_anterior_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_AUX_inventario_anterior_fecha"
+			        }
+			      ]
+			    },
+			    "fecha_has_medida_AUX_inventario_anterior_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "medida.AUX_inventario_anterior_fecha": {
+			          "Target": {
+			            "Entity": "medida.AUX_inventario_anterior_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "medida.AUX_inventario_anterior_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_AUX_inventario_anterior_fecha"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_stock_inventario_real": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.stock_inventario_real": {
+			          "Target": {
+			            "Entity": "medida.stock_inventario_real"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.stock_inventario_real"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_stock_inventario_real"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_movimientos_de_inventario": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.movimientos_de_inventario": {
+			          "Target": {
+			            "Entity": "medida.movimientos_de_inventario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.movimientos_de_inventario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_movimientos_de_inventario"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_monto": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.monto": {
+			          "Target": {
+			            "Entity": "medida.monto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.monto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_monto"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_cantidad": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.cantidad": {
+			          "Target": {
+			            "Entity": "medida.cantidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.cantidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_cantidad"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_margen_de_ventas": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.margen_de_ventas": {
+			          "Target": {
+			            "Entity": "medida.margen_de_ventas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.margen_de_ventas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_margen_de_ventas"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_costo_de_ventas": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.costo_de_ventas": {
+			          "Target": {
+			            "Entity": "medida.costo_de_ventas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.costo_de_ventas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_costo_de_ventas"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_compras": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.compras": {
+			          "Target": {
+			            "Entity": "medida.compras"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.compras"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_compras"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_ventas": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.ventas": {
+			          "Target": {
+			            "Entity": "medida.ventas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.ventas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_ventas"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_precio_Venta_pro": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.precio_Venta_pro": {
+			          "Target": {
+			            "Entity": "medida.precio_Venta_pro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.precio_Venta_pro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_precio_Venta_pro"
+			        }
+			      ]
+			    },
+			    "fecha_has_medida_precio_Venta_pro": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "medida.precio_Venta_pro": {
+			          "Target": {
+			            "Entity": "medida.precio_Venta_pro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "medida.precio_Venta_pro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_precio_Venta_pro"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_costo_venta": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.costo_venta": {
+			          "Target": {
+			            "Entity": "medida.costo_venta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.costo_venta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_costo_venta"
+			        }
+			      ]
+			    },
+			    "fecha_has_medida_costo_venta": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "medida.costo_venta": {
+			          "Target": {
+			            "Entity": "medida.costo_venta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "medida.costo_venta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_costo_venta"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_cantidad_comprada": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.cantidad_comprada": {
+			          "Target": {
+			            "Entity": "medida.cantidad_comprada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.cantidad_comprada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_cantidad_comprada"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_cantidad_vendida": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.cantidad_vendida": {
+			          "Target": {
+			            "Entity": "medida.cantidad_vendida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.cantidad_vendida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_cantidad_vendida"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_precio_compra": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.precio_compra": {
+			          "Target": {
+			            "Entity": "medida.precio_compra"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.precio_compra"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_precio_compra"
+			        }
+			      ]
+			    },
+			    "fecha_has_medida_precio_compra": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "medida.precio_compra": {
+			          "Target": {
+			            "Entity": "medida.precio_compra"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "medida.precio_compra"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_precio_compra"
+			        }
+			      ]
+			    },
+			    "movimiento_has_medida_precio_venta": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "medida.precio_venta": {
+			          "Target": {
+			            "Entity": "medida.precio_venta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "medida.precio_venta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_precio_venta"
+			        }
+			      ]
+			    },
+			    "fecha_has_medida_precio_venta": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "medida.precio_venta": {
+			          "Target": {
+			            "Entity": "medida.precio_venta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "medida.precio_venta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_precio_venta"
+			        }
+			      ]
+			    },
+			    "fecha_has_orden_dia_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.orden_dia_semana": {
+			          "Target": {
+			            "Entity": "fecha.orden_dia_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.orden_dia_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_orden_dia_semanas"
+			        }
+			      ]
+			    },
+			    "fecha_has_orden_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.orden_me": {
+			          "Target": {
+			            "Entity": "fecha.orden_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.orden_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_orden_me"
+			        }
+			      ]
+			    },
+			    "fecha_has_orden_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.orden_trimestre": {
+			          "Target": {
+			            "Entity": "fecha.orden_trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.orden_trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_orden_trimestres"
+			        }
+			      ]
+			    },
+			    "fecha_has_rango_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.rango_semana": {
+			          "Target": {
+			            "Entity": "fecha.rango_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.rango_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_rango_semanas"
+			        }
+			      ]
+			    },
+			    "fecha_has_inicio_de_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.inicio_de_semana": {
+			          "Target": {
+			            "Entity": "fecha.inicio_de_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.inicio_de_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_inicio_de_semanas"
+			        }
+			      ]
+			    },
+			    "fecha_has_dia_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.dia_semana": {
+			          "Target": {
+			            "Entity": "fecha.dia_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.dia_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_dia_semanas"
+			        }
+			      ]
+			    },
+			    "fecha_has_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.dia": {
+			          "Target": {
+			            "Entity": "fecha.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_dias"
+			        }
+			      ]
+			    },
+			    "fecha_has_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.trimestre": {
+			          "Target": {
+			            "Entity": "fecha.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_trimestres"
+			        }
+			      ]
+			    },
+			    "fecha_has_aaaammm": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.aaaammm": {
+			          "Target": {
+			            "Entity": "fecha.aaaammm"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.aaaammm"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_aaaammms"
+			        }
+			      ]
+			    },
+			    "fecha_has_añome": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.añome": {
+			          "Target": {
+			            "Entity": "fecha.añome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.añome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_añome"
+			        }
+			      ]
+			    },
+			    "fecha_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.me": {
+			          "Target": {
+			            "Entity": "fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_me"
+			        }
+			      ]
+			    },
+			    "fecha_has_periodo": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.periodo": {
+			          "Target": {
+			            "Entity": "fecha.periodo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.periodo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_periodos"
+			        }
+			      ]
+			    },
+			    "fecha_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.año": {
+			          "Target": {
+			            "Entity": "fecha.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_años"
+			        }
+			      ]
+			    },
+			    "fecha_has_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.fecha": {
+			          "Target": {
+			            "Entity": "fecha.fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_fechas"
+			        }
+			      ]
+			    },
+			    "fecha_has_fecha_key": {
+			      "Binding": {
+			        "ConceptualEntity": "Fecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fecha": {
+			          "Target": {
+			            "Entity": "fecha"
+			          }
+			        },
+			        "fecha.fecha_key": {
+			          "Target": {
+			            "Entity": "fecha.fecha_key"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fecha"
+			            },
+			            "Object": {
+			              "Role": "fecha.fecha_key"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_fecha_keys"
+			        }
+			      ]
+			    },
+			    "movimiento_has_precio_unitario": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "movimiento.precio_unitario": {
+			          "Target": {
+			            "Entity": "movimiento.precio_unitario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "movimiento.precio_unitario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_precio_unitarios"
+			        }
+			      ]
+			    },
+			    "movimiento_has_costo_unitario": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "movimiento.costo_unitario": {
+			          "Target": {
+			            "Entity": "movimiento.costo_unitario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "movimiento.costo_unitario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_costo_unitarios"
+			        }
+			      ]
+			    },
+			    "movimiento_has_monto": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "movimiento.monto": {
+			          "Target": {
+			            "Entity": "movimiento.monto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "movimiento.monto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_monto1"
+			        }
+			      ]
+			    },
+			    "movimiento_has_cantidad": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "movimiento.cantidad": {
+			          "Target": {
+			            "Entity": "movimiento.cantidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "movimiento.cantidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_cantidads"
+			        }
+			      ]
+			    },
+			    "movimiento_has_tipo_movimiento": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "movimiento.tipo_movimiento": {
+			          "Target": {
+			            "Entity": "movimiento.tipo_movimiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "movimiento.tipo_movimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_tipo_movimientos"
+			        }
+			      ]
+			    },
+			    "movimiento_has_id_movimiento": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "movimiento.id_movimiento": {
+			          "Target": {
+			            "Entity": "movimiento.id_movimiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "movimiento.id_movimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_id_movimientos"
+			        }
+			      ]
+			    },
+			    "movimiento_has_vendedor": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "movimiento.vendedor": {
+			          "Target": {
+			            "Entity": "movimiento.vendedor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "movimiento.vendedor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_vendedors"
+			        }
+			      ]
+			    },
+			    "movimiento_has_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "movimientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "movimiento": {
+			          "Target": {
+			            "Entity": "movimiento"
+			          }
+			        },
+			        "movimiento.fecha": {
+			          "Target": {
+			            "Entity": "movimiento.fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "movimiento"
+			            },
+			            "Object": {
+			              "Role": "movimiento.fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "movimientos_have_fechas1"
+			        }
+			      ]
+			    },
+			    "tabla_producto_has_foto": {
+			      "Binding": {
+			        "ConceptualEntity": "tabla_productos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_producto": {
+			          "Target": {
+			            "Entity": "tabla_producto"
+			          }
+			        },
+			        "tabla_producto.foto": {
+			          "Target": {
+			            "Entity": "tabla_producto.foto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_producto"
+			            },
+			            "Object": {
+			              "Role": "tabla_producto.foto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_productos_have_fotos"
+			        }
+			      ]
+			    },
+			    "tabla_producto_has_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "tabla_productos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_producto": {
+			          "Target": {
+			            "Entity": "tabla_producto"
+			          }
+			        },
+			        "tabla_producto.tipo": {
+			          "Target": {
+			            "Entity": "tabla_producto.tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_producto"
+			            },
+			            "Object": {
+			              "Role": "tabla_producto.tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_productos_have_tipos"
+			        }
+			      ]
+			    },
+			    "tabla_producto_has_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "tabla_productos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_producto": {
+			          "Target": {
+			            "Entity": "tabla_producto"
+			          }
+			        },
+			        "tabla_producto.nombre": {
+			          "Target": {
+			            "Entity": "tabla_producto.nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_producto"
+			            },
+			            "Object": {
+			              "Role": "tabla_producto.nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_productos_have_nombres"
+			        }
+			      ]
+			    },
+			    "tabla_producto_has_descripción": {
+			      "Binding": {
+			        "ConceptualEntity": "tabla_productos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_producto": {
+			          "Target": {
+			            "Entity": "tabla_producto"
+			          }
+			        },
+			        "tabla_producto.descripción": {
+			          "Target": {
+			            "Entity": "tabla_producto.descripción"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_producto"
+			            },
+			            "Object": {
+			              "Role": "tabla_producto.descripción"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_productos_have_descripcións"
+			        }
+			      ]
+			    },
+			    "tabla_producto_has_id_producto": {
+			      "Binding": {
+			        "ConceptualEntity": "tabla_productos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_producto": {
+			          "Target": {
+			            "Entity": "tabla_producto"
+			          }
+			        },
+			        "tabla_producto.id_producto": {
+			          "Target": {
+			            "Entity": "tabla_producto.id_producto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_producto"
+			            },
+			            "Object": {
+			              "Role": "tabla_producto.id_producto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_productos_have_id_productos"
+			        }
+			      ]
+			    },
+			    "tabla_cliente_has_segmento": {
+			      "Binding": {
+			        "ConceptualEntity": "tabla_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_cliente": {
+			          "Target": {
+			            "Entity": "tabla_cliente"
+			          }
+			        },
+			        "tabla_cliente.segmento": {
+			          "Target": {
+			            "Entity": "tabla_cliente.segmento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_cliente"
+			            },
+			            "Object": {
+			              "Role": "tabla_cliente.segmento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_clientes_have_segmentos"
+			        }
+			      ]
+			    },
+			    "tabla_cliente_has_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "tabla_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_cliente": {
+			          "Target": {
+			            "Entity": "tabla_cliente"
+			          }
+			        },
+			        "tabla_cliente.cliente": {
+			          "Target": {
+			            "Entity": "tabla_cliente.cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_cliente"
+			            },
+			            "Object": {
+			              "Role": "tabla_cliente.cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_clientes_have_clientes"
+			        }
+			      ]
+			    },
+			    "tabla_cliente_has_id_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "tabla_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_cliente": {
+			          "Target": {
+			            "Entity": "tabla_cliente"
+			          }
+			        },
+			        "tabla_cliente.id_cliente": {
+			          "Target": {
+			            "Entity": "tabla_cliente.id_cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_cliente"
+			            },
+			            "Object": {
+			              "Role": "tabla_cliente.id_cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_clientes_have_id_clientes"
+			        }
+			      ]
+			    },
+			    "tabla_almacene_has_ubicacion": {
+			      "Binding": {
+			        "ConceptualEntity": "tabla_almacenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_almacene": {
+			          "Target": {
+			            "Entity": "tabla_almacene"
+			          }
+			        },
+			        "tabla_almacene.ubicacion": {
+			          "Target": {
+			            "Entity": "tabla_almacene.ubicacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_almacene"
+			            },
+			            "Object": {
+			              "Role": "tabla_almacene.ubicacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_almacenes_have_ubicacions"
+			        }
+			      ]
+			    },
+			    "tabla_almacene_has_capacidad_repuesto": {
+			      "Binding": {
+			        "ConceptualEntity": "tabla_almacenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_almacene": {
+			          "Target": {
+			            "Entity": "tabla_almacene"
+			          }
+			        },
+			        "tabla_almacene.capacidad_repuesto": {
+			          "Target": {
+			            "Entity": "tabla_almacene.capacidad_repuesto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_almacene"
+			            },
+			            "Object": {
+			              "Role": "tabla_almacene.capacidad_repuesto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_almacenes_have_capacidad_repuestos"
+			        }
+			      ]
+			    },
+			    "tabla_almacene_has_capacidad_vehiculo": {
+			      "Binding": {
+			        "ConceptualEntity": "tabla_almacenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_almacene": {
+			          "Target": {
+			            "Entity": "tabla_almacene"
+			          }
+			        },
+			        "tabla_almacene.capacidad_vehiculo": {
+			          "Target": {
+			            "Entity": "tabla_almacene.capacidad_vehiculo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_almacene"
+			            },
+			            "Object": {
+			              "Role": "tabla_almacene.capacidad_vehiculo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_almacenes_have_capacidad_vehiculos"
+			        }
+			      ]
+			    },
+			    "tabla_almacene_has_almacen": {
+			      "Binding": {
+			        "ConceptualEntity": "tabla_almacenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_almacene": {
+			          "Target": {
+			            "Entity": "tabla_almacene"
+			          }
+			        },
+			        "tabla_almacene.almacen": {
+			          "Target": {
+			            "Entity": "tabla_almacene.almacen"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_almacene"
+			            },
+			            "Object": {
+			              "Role": "tabla_almacene.almacen"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_almacenes_have_almacens"
+			        }
+			      ]
+			    },
+			    "tabla_almacene_has_id_almacen": {
+			      "Binding": {
+			        "ConceptualEntity": "tabla_almacenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_almacene": {
+			          "Target": {
+			            "Entity": "tabla_almacene"
+			          }
+			        },
+			        "tabla_almacene.id_almacen": {
+			          "Target": {
+			            "Entity": "tabla_almacene.id_almacen"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_almacene"
+			            },
+			            "Object": {
+			              "Role": "tabla_almacene.id_almacen"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_almacenes_have_id_almacens"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

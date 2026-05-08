@@ -1,0 +1,135 @@
+table 'Medidas Predicciones'
+	lineageTag: 52f1609d-a1ef-44fd-84a0-96f4f69f0499
+
+	measure 'Cantidad Predecida' = SUM(predicciones_movimientos[Cantidad])
+		formatString: #,0
+		lineageTag: ca014bd5-d1b4-45db-a6ff-2e624993e0e2
+
+	measure 'Cantidad Comprada predecida' =
+			
+			CALCULATE(
+			    [Cantidad Predecida],
+			    predicciones_movimientos[TipoMovimiento] = "Compra"
+			)
+		formatString: #,0
+		lineageTag: f1feaa0a-4922-421f-a97f-d377e89261e7
+
+	measure 'Cantidad Vendida predecida' =
+			
+			CALCULATE(
+			    [Cantidad Predecida],
+			    predicciones_movimientos[TipoMovimiento] = "Venta"
+			)
+		formatString: 0
+		lineageTag: 871a5126-4c6a-423a-84a3-7edef3be7140
+
+	measure 'Salidas Inventario predecidas' =
+			
+			CALCULATE(
+			    [Cantidad Predecida],
+			    predicciones_movimientos[TipoMovimiento] = "Salida"
+			)
+		formatString: 0
+		lineageTag: c8e371a0-fc82-4a54-8528-c55bf492ac65
+
+	measure 'Entradas Inventario predecidas' =
+			
+			CALCULATE(
+			    [Cantidad Predecida],
+			    predicciones_movimientos[TipoMovimiento] = "Entrada"
+			)
+		formatString: #,0
+		lineageTag: 72e70222-1082-4050-bab0-e4f2488e90c1
+
+	measure 'Movimientos de Inventario predecidos' = [Entradas Inventario predecidas] - [Salidas Inventario predecidas]
+		formatString: 0
+		lineageTag: 2375b602-fe27-4a3c-a32b-972519968821
+
+	measure 'Stock Inventario predecido (NO DIARIO)' =
+			
+			CALCULATE(
+			    [Cantidad Predecida],
+			    predicciones_movimientos[TipoMovimiento] = "Control"
+			)
+		formatString: 0
+		lineageTag: 35a0edbe-a4e8-418d-b2cf-bd741299dd3c
+
+	measure 'Movimientos acumulados predecidos' =
+			
+			VAR MAX_FECHA = [AUX_MaximaFechaActual]
+			
+			VAR ULTIMO_INVENTARIO_FECHA = [AUX_InventarioAnteriorFecha_predicciones]
+			
+			VAR MEDIDA =
+			CALCULATE(
+			    [Movimientos de Inventario predecidos],
+			    FILTER(
+			        ALL(Fecha),
+			        Fecha[Fecha] >= ULTIMO_INVENTARIO_FECHA + 1
+			        && Fecha[Fecha] <= MAX_FECHA
+			    )
+			)
+			
+			RETURN MEDIDA
+		formatString: 0
+		lineageTag: bd4c014b-142c-4a08-9e3e-a1797d7816aa
+
+	measure 'Stock Inventario predecido' =
+			
+			[AUX_UltimoInventario_predicciones] + [Movimientos acumulados predecidos]
+		formatString: #,0
+		lineageTag: 95a128fa-111b-4b62-9b50-d5cdf44677e5
+
+	measure 'Montos predecidos' = SUM(predicciones_movimientos[Monto])
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: bcae2ee9-b392-4cfd-b2f2-f663719b72c4
+
+	measure 'Ventas predecidas' =
+			
+			CALCULATE(
+			    [Montos predecidos],
+			    FILTER(
+			        predicciones_movimientos,
+			        predicciones_movimientos[TipoMovimiento] = "Venta"
+			    )
+			)
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 6c891891-d498-4de9-81cb-78e749335ad6
+
+	measure 'Costo de Ventas predecidos' =
+			
+			CALCULATE(
+			    SUMX(predicciones_movimientos, predicciones_movimientos[Cantidad] * predicciones_movimientos[CostoUnitario]),
+			    FILTER(
+			        predicciones_movimientos,
+			        predicciones_movimientos[TipoMovimiento] = "Venta"
+			    )
+			)
+		lineageTag: c75d5ce0-5e04-4d88-9592-964d97770ba0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Compras predecidas' =
+			
+			CALCULATE(
+			    [Montos predecidos],
+			    FILTER(
+			        predicciones_movimientos,
+			        predicciones_movimientos[TipoMovimiento] = "Compra"
+			    )
+			)
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 6de5f1c0-7f2e-426b-af36-8699dfb71fb0
+
+	partition 'Medidas Predicciones' = m
+		mode: import
+		source =
+				let
+				    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Columna1 = _t]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Columna1", type text}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Columna1"})
+				in
+				    #"Columnas quitadas"
+
+	annotation PBI_ResultType = Table
+
