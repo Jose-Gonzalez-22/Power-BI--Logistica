@@ -334,6 +334,10 @@ table Medidas
 		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
 		lineageTag: bd855452-93dc-45c6-98e2-29c545343f6d
 
+	measure 'Peso Compras/Ventas' = DIVIDE([Compras], [Ventas], BLANK())
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 37b8ebe1-e7da-4e46-8f67-8d0740d7ec42
+
 	partition Medidas = m
 		mode: import
 		source =

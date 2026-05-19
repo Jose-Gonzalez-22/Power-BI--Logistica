@@ -1154,16 +1154,6 @@ cultureInfo es-ES
 			            },
 			            "Weight": 0.9
 			          }
-			        },
-			        {
-			          "Ventas": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -1179,16 +1169,6 @@ cultureInfo es-ES
 			        {
 			          "cantidad comprada": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Compras": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -1370,16 +1350,6 @@ cultureInfo es-ES
 			            },
 			            "Weight": 0.591
 			          }
-			        },
-			        {
-			          "Stock real": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -1524,16 +1494,6 @@ cultureInfo es-ES
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "Stock Teórico": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]

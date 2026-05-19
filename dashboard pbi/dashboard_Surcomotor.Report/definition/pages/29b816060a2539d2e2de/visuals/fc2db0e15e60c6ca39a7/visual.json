@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "fc2db0e15e60c6ca39a7",
   "position": {
-    "x": 269.91304347826087,
-    "y": 0,
+    "x": 1071.304347826087,
+    "y": 204.98550724637681,
     "z": 2000,
-    "height": 96,
+    "height": 82.086956521739125,
     "width": 179.47826086956522,
     "tabOrder": 2000
   },
@@ -238,5 +238,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c11c4c4bb8b4e8007cc8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fecha"
+              }
+            },
+            "Property": "Año"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

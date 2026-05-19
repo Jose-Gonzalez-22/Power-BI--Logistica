@@ -3,9 +3,9 @@
   "name": "28cdbf0ee8e8aa090086",
   "position": {
     "x": 0,
-    "y": 126.60869565217391,
+    "y": 0,
     "z": 3000,
-    "height": 594.08695652173913,
+    "height": 720.695652173913,
     "width": 758.26086956521738,
     "tabOrder": 3000
   },
@@ -235,6 +235,82 @@
               }
             }
           }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "FillRule": {
+                      "Input": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Medidas"
+                            }
+                          },
+                          "Property": "Margen de Ventas"
+                        }
+                      },
+                      "FillRule": {
+                        "linearGradient3": {
+                          "min": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#E24646'"
+                              }
+                            },
+                            "value": {
+                              "Literal": {
+                                "Value": "0.15D"
+                              }
+                            }
+                          },
+                          "mid": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#000000'"
+                              }
+                            }
+                          },
+                          "max": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#36DF69'"
+                              }
+                            },
+                            "value": {
+                              "Literal": {
+                                "Value": "0.35D"
+                              }
+                            }
+                          },
+                          "nullColoringStrategy": {
+                            "strategy": {
+                              "Literal": {
+                                "Value": "'asZero'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Medidas.Margen de Ventas"
+          }
         }
       ],
       "columnFormatting": [
@@ -362,6 +438,29 @@
           },
           "selector": {
             "metadata": "Medidas.Compras"
+          }
+        }
+      ],
+      "accessibility": [
+        {
+          "properties": {
+            "altTextColumns": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "tabla_productos.FOTO"
           }
         }
       ]

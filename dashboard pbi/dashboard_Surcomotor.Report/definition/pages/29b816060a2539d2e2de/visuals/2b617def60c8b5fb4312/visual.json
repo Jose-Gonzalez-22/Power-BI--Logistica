@@ -6,7 +6,7 @@
     "y": 0,
     "z": 5000,
     "height": 720.695652173913,
-    "width": 521.73913043478262,
+    "width": 281.04347826086956,
     "tabOrder": 5000
   },
   "visual": {
@@ -28,34 +28,6 @@
               },
               "queryRef": "Medidas.Ventas",
               "nativeQueryRef": "Ventas"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Costo de Ventas"
-                }
-              },
-              "queryRef": "Medidas.Costo de Ventas",
-              "nativeQueryRef": "Costo de Ventas"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Margen de Ventas"
-                }
-              },
-              "queryRef": "Medidas.Margen de Ventas",
-              "nativeQueryRef": "Margen de Ventas"
             },
             {
               "field": {
@@ -114,7 +86,7 @@
             "orientation": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "1D"
                 }
               }
             },
@@ -302,20 +274,6 @@
             }
           },
           "selector": {
-            "metadata": "Medidas.Costo de Ventas"
-          }
-        },
-        {
-          "properties": {
-            "labelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "4L"
-                }
-              }
-            }
-          },
-          "selector": {
             "metadata": "Medidas.Compras"
           }
         },
@@ -331,6 +289,207 @@
           },
           "selector": {
             "metadata": "Medidas.Rotacion Inventario"
+          }
+        }
+      ],
+      "referenceLabel": [
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Medidas.Ventas",
+            "id": "field-99e9d4ff-3f4b-5084-7759-e4fc58bc661f",
+            "order": 0
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Medidas.Ventas",
+            "id": "field-b40079a7-341d-f02f-498b-e530744e9c0a",
+            "order": 1
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Costo de Ventas"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Medidas.Ventas",
+            "id": "field-53977fe4-478d-aaea-bc41-9f4dda3082c6",
+            "order": 0
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Margen de Ventas"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Medidas.Ventas",
+            "id": "field-46bcd68f-048a-7cd1-d0f1-57ddb9d365c5",
+            "order": 1
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Peso Compras/Ventas"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Medidas.Compras",
+            "id": "field-9b22c2e6-4ab5-74b6-dd89-45cde09fed04",
+            "order": 0
+          }
+        }
+      ],
+      "referenceLabelTitle": [
+        {
+          "properties": {
+            "titleContentType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'custom'"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Peso C/V'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Compras",
+            "id": "field-9b22c2e6-4ab5-74b6-dd89-45cde09fed04"
+          }
+        },
+        {
+          "properties": {
+            "titleContentType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'custom'"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Costos'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Ventas",
+            "id": "field-53977fe4-478d-aaea-bc41-9f4dda3082c6"
+          }
+        },
+        {
+          "properties": {
+            "titleContentType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'custom'"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Margen'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Ventas",
+            "id": "field-46bcd68f-048a-7cd1-d0f1-57ddb9d365c5"
+          }
+        }
+      ],
+      "referenceLabelValue": [
+        {
+          "properties": {
+            "valuePrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Ventas",
+            "id": "field-53977fe4-478d-aaea-bc41-9f4dda3082c6"
           }
         }
       ]
@@ -409,34 +568,6 @@
               }
             },
             "Property": "Ventas"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "ccc6a3d437e536b3e1ad",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Costo de Ventas"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "082ac7a4600e49b07acd",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Margen de Ventas"
           }
         },
         "type": "Advanced"
