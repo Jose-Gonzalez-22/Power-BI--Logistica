@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "2b617def60c8b5fb4312",
   "position": {
-    "x": 758.26086956521738,
+    "x": 242.61818181818182,
     "y": 0,
     "z": 5000,
-    "height": 720.695652173913,
-    "width": 281.04347826086956,
+    "height": 476.50909090909096,
+    "width": 617.89090909090908,
     "tabOrder": 5000
   },
   "visual": {
@@ -28,6 +28,20 @@
               },
               "queryRef": "Medidas.Ventas",
               "nativeQueryRef": "Ventas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Margen de Ventas"
+                }
+              },
+              "queryRef": "Medidas.Margen de Ventas",
+              "nativeQueryRef": "Margen de Ventas"
             },
             {
               "field": {
@@ -86,11 +100,18 @@
             "orientation": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "0D"
                 }
               }
             },
             "columnCount": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            },
+            "rowCount": {
               "expr": {
                 "Literal": {
                   "Value": "2L"
@@ -352,20 +373,7 @@
           }
         },
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Margen de Ventas"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "data": [
               {
@@ -404,6 +412,34 @@
             ],
             "metadata": "Medidas.Compras",
             "id": "field-9b22c2e6-4ab5-74b6-dd89-45cde09fed04",
+            "order": 0
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "% Margen de Ventas"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Medidas.Margen de Ventas",
+            "id": "field-840712dd-4e28-15a3-1112-ccbf441a9b09",
             "order": 0
           }
         }
@@ -473,6 +509,28 @@
           "selector": {
             "metadata": "Medidas.Ventas",
             "id": "field-46bcd68f-048a-7cd1-d0f1-57ddb9d365c5"
+          }
+        },
+        {
+          "properties": {
+            "titleContentType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'custom'"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'% Margen'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Margen de Ventas",
+            "id": "field-840712dd-4e28-15a3-1112-ccbf441a9b09"
           }
         }
       ],
@@ -559,7 +617,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "6d9c3c535f378c0cc6cd",
+        "name": "97c4829e15f914f6b09b",
         "field": {
           "Measure": {
             "Expression": {
@@ -573,7 +631,7 @@
         "type": "Advanced"
       },
       {
-        "name": "ef7745d6a072178b6a2c",
+        "name": "17410eda9616a8a09105",
         "field": {
           "Measure": {
             "Expression": {
@@ -587,7 +645,7 @@
         "type": "Advanced"
       },
       {
-        "name": "d6709516c7a1b45cd17e",
+        "name": "214cccf7de44ed1caaa0",
         "field": {
           "Measure": {
             "Expression": {
@@ -596,6 +654,20 @@
               }
             },
             "Property": "Rotacion Inventario"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "0adc7b13b928f9d7acef",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Margen de Ventas"
           }
         },
         "type": "Advanced"

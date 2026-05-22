@@ -85,8 +85,10 @@ table Medidas
 			    [Monto],
 			    movimientos[TipoMovimiento] = "Venta"
 			)
-		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		formatString: \$#,0;(\$#,0);\$#,0
 		lineageTag: 0c0175b1-b050-4a77-8291-aaa7abbb70d9
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
 
 	measure Compras =
 			
@@ -106,7 +108,7 @@ table Medidas
 		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
 		lineageTag: a06fe8e4-32d8-47b9-a5d3-b4189b6fa4c6
 
-	measure 'Margen de Ventas' = DIVIDE([Ventas] - [Costo de Ventas], [Ventas], BLANK())
+	measure '% Margen de Ventas' = DIVIDE([Ventas] - [Costo de Ventas], [Ventas], BLANK())
 		formatString: 0\ %;-0\ %;0\ %
 		lineageTag: 353d3396-a69d-47ba-94d9-c2ecb7494ed5
 
@@ -337,6 +339,12 @@ table Medidas
 	measure 'Peso Compras/Ventas' = DIVIDE([Compras], [Ventas], BLANK())
 		formatString: 0\ %;-0\ %;0\ %
 		lineageTag: 37b8ebe1-e7da-4e46-8f67-8d0740d7ec42
+
+	measure 'Margen de Ventas' = [Ventas] - [Costo de Ventas]
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 0d207cdc-c81d-4498-affe-7b95a2e0901c
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
 
 	partition Medidas = m
 		mode: import

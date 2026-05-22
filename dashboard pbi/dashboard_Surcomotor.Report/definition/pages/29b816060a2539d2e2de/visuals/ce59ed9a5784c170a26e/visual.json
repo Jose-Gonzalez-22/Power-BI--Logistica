@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "ce59ed9a5784c170a26e",
   "position": {
-    "x": 1071.304347826087,
-    "y": 102.95652173913044,
+    "x": 23.48376762025714,
+    "y": 63.368821925557484,
     "z": 4000,
-    "height": 82.086956521739125,
-    "width": 179.47826086956522,
+    "height": 81.355932203389827,
+    "width": 178.9830508474576,
     "tabOrder": 4000
   },
   "visual": {
@@ -114,49 +114,7 @@
       ],
       "general": [
         {
-          "properties": {
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "f",
-                    "Entity": "Fecha",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "f"
-                                }
-                              },
-                              "Property": "Mes"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Diciembre'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
-              }
-            }
-          }
+          "properties": {}
         }
       ]
     },
@@ -242,7 +200,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "9df77e87434bc6f80c25",
+        "name": "9469c0dbfaa822e3fbf9",
         "field": {
           "Column": {
             "Expression": {

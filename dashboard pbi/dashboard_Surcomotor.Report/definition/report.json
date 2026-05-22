@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.2.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
   "themeCollection": {
     "baseTheme": {
       "name": "CY26SU04",
@@ -36,7 +36,8 @@
     ]
   },
   "publicCustomVisuals": [
-    "htmlContent443BE3AD55E043BF878BED274D3A6855"
+    "htmlContent443BE3AD55E043BF878BED274D3A6855",
+    "deneb7E15AEF80B9E4D4F8E12924291ECE89A"
   ],
   "resourcePackages": [
     {

@@ -1144,16 +1144,6 @@ cultureInfo es-ES
 			          "cantidad vendida": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Cant. Vend.": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -1257,7 +1247,7 @@ cultureInfo es-ES
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Margen de Ventas"
+			          "ConceptualProperty": "% Margen de Ventas"
 			        }
 			      },
 			      "State": "Generated",

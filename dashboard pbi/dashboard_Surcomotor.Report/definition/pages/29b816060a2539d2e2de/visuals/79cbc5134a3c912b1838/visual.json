@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "79cbc5134a3c912b1838",
   "position": {
-    "x": 1071.304347826087,
-    "y": 307.01449275362319,
-    "z": 5001,
-    "height": 82.086956521739125,
-    "width": 179.47826086956522,
-    "tabOrder": 5001
+    "x": 23.48376762025714,
+    "y": 277.60611006115226,
+    "z": 6000,
+    "height": 82.983050847457619,
+    "width": 178.9830508474576,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "slicer",
@@ -196,23 +196,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "253e18a5de2473d17d92",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "tabla_almacenes"
-              }
-            },
-            "Property": "almacen"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
