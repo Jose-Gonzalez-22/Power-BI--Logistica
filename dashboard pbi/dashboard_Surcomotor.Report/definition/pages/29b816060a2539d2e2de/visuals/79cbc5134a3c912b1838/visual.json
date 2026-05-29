@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "79cbc5134a3c912b1838",
   "position": {
-    "x": 23.48376762025714,
-    "y": 277.60611006115226,
+    "x": 30.72,
+    "y": 334.08,
     "z": 6000,
-    "height": 82.983050847457619,
-    "width": 178.9830508474576,
+    "height": 90.24,
+    "width": 180.48,
     "tabOrder": 6000
   },
   "visual": {
@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "tabla_almacenes"
+                      "Entity": "almacenes"
                     }
                   },
                   "Property": "almacen"
                 }
               },
-              "queryRef": "tabla_almacenes.almacen",
+              "queryRef": "almacenes.almacen",
               "nativeQueryRef": "almacen",
               "active": true
             }
@@ -78,6 +78,13 @@
                   }
                 }
               }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
             }
           }
         }
@@ -106,6 +113,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
                 }
               }
             }
@@ -195,6 +209,29 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "almacen",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3484eafd5d0df7188171",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "almacenes"
+              }
+            },
+            "Property": "almacen"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

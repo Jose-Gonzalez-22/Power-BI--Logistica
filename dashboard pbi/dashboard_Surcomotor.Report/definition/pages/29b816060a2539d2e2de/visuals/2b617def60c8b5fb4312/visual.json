@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "2b617def60c8b5fb4312",
   "position": {
-    "x": 242.61818181818182,
+    "x": 241.92,
     "y": 0,
-    "z": 5000,
-    "height": 476.50909090909096,
-    "width": 617.89090909090908,
+    "z": 9502,
+    "height": 476.15999999999997,
+    "width": 558.71999999999991,
     "tabOrder": 5000
   },
   "visual": {
@@ -114,7 +114,7 @@
             "rowCount": {
               "expr": {
                 "Literal": {
-                  "Value": "2L"
+                  "Value": "3L"
                 }
               }
             }
@@ -617,7 +617,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "97c4829e15f914f6b09b",
+        "name": "e0faeb1d9b8d7ffb54da",
         "field": {
           "Measure": {
             "Expression": {
@@ -631,7 +631,21 @@
         "type": "Advanced"
       },
       {
-        "name": "17410eda9616a8a09105",
+        "name": "79b7b30e584ce9197ab9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Margen de Ventas"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "3bedcdf08cbfdf910933",
         "field": {
           "Measure": {
             "Expression": {
@@ -645,7 +659,7 @@
         "type": "Advanced"
       },
       {
-        "name": "214cccf7de44ed1caaa0",
+        "name": "28e9a5880f99531502a0",
         "field": {
           "Measure": {
             "Expression": {
@@ -654,20 +668,6 @@
               }
             },
             "Property": "Rotacion Inventario"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "0adc7b13b928f9d7acef",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Margen de Ventas"
           }
         },
         "type": "Advanced"

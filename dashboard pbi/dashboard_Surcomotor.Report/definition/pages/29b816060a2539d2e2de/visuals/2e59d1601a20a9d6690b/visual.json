@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "2e59d1601a20a9d6690b",
   "position": {
-    "x": 23.48376762025714,
-    "y": 385.53831345098251,
+    "x": 30.72,
+    "y": 460.79999999999995,
     "z": 7000,
-    "height": 81.355932203389827,
-    "width": 178.9830508474576,
+    "height": 90.24,
+    "width": 180.48,
     "tabOrder": 7000
   },
   "visual": {
@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "tabla_productos"
+                      "Entity": "productos"
                     }
                   },
                   "Property": "TIPO"
                 }
               },
-              "queryRef": "tabla_productos.TIPO",
+              "queryRef": "productos.TIPO",
               "nativeQueryRef": "TIPO",
               "active": true
             }
@@ -78,6 +78,13 @@
                   }
                 }
               }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
             }
           }
         }
@@ -106,6 +113,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
                 }
               }
             }
@@ -195,17 +209,22 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "TIPO",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "cf8dd5199b215be90074",
+        "name": "1c81fe0df1e2f9babe33",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "tabla_productos"
+                "Entity": "productos"
               }
             },
             "Property": "TIPO"

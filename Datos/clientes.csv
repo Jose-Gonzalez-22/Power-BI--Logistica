@@ -1,0 +1,201 @@
+﻿id_cliente,cliente,segmento
+1,Eloy Bonet Ramón,Persona
+2,Baltasar Arenas-Pinilla,Persona
+3,Mar del Niño,Empresa
+4,Cebrián Cepeda Navas,Persona
+5,Eva de Céspedes,Persona
+6,Víctor Rubio Bonilla,Empresa
+7,Florinda Anastasia Agudo Moles,Persona
+8,Aroa Arranz Bru,Persona
+9,Bernardino Almazán Manzanares,Empresa
+10,Maribel Tapia Lara,Persona
+11,Socorro Arco Mayol,Persona
+12,Lourdes Tomas Gabaldón,Empresa
+13,Micaela Lucila Miró Alberola,Persona
+14,Virginia Vilalta Rovira,Persona
+15,Merche del Viñas,Empresa
+16,Florentina Viana Antón,Persona
+17,Primitivo Blanch Torrens,Persona
+18,Che Nadal-Navas,Empresa
+19,Genoveva de Saura,Persona
+20,Maribel Navarrete Alegre,Persona
+21,Lázaro Borja,Empresa
+22,Adora Ortiz Grande,Persona
+23,Luisina Vallejo Barreda,Persona
+24,Jose Miguel Roberto Guijarro Tomás,Empresa
+25,Carmelo Sales Pinedo,Persona
+26,Amada Agustín Cañizares,Persona
+27,Celia Almazán Jerez,Empresa
+28,Noa Llabrés Rovira,Persona
+29,Abigaíl Camps Barros,Persona
+30,Felicidad Borrego,Empresa
+31,Inocencio Aguirre Pina,Persona
+32,Leandro Quintero Andres,Persona
+33,Dorotea Sureda Aparicio,Empresa
+34,Eva María del Olivé,Persona
+35,Miguel Céspedes Rius,Persona
+36,Plinio Cobo Perales,Empresa
+37,Ramiro de Barceló,Persona
+38,Gala Medina,Persona
+39,Yago Manuel Porras,Empresa
+40,Begoña Nebot Villar,Persona
+41,Maxi Diaz Pomares,Persona
+42,Ana Cerdán Sanz,Empresa
+43,Félix Sandoval Sanmartín,Persona
+44,Iker Ruy Anaya Cuadrado,Persona
+45,Eufemia Villanueva,Empresa
+46,Manu Cervantes,Persona
+47,Leyre Calvo Peinado,Persona
+48,Victoriano del Buendía,Empresa
+49,José Luis Hervia-Frutos,Persona
+50,Dulce Puig Aroca,Persona
+51,Anita Figueras,Empresa
+52,Chus Alemany,Persona
+53,Eloy Gual,Persona
+54,Marcelo Molins Blanes,Empresa
+55,Manola Cañellas Cerdá,Persona
+56,Leire Puig Anaya,Persona
+57,Pepe Torre-Niño,Empresa
+58,Zoraida Gomez Vallejo,Persona
+59,Marcos Aguado Urrutia,Persona
+60,Obdulia Carvajal Badía,Empresa
+61,Tere Serna Paredes,Persona
+62,Estela Palmer Gascón,Persona
+63,Fabiana Fernández Escrivá,Empresa
+64,Rosenda Barrios Ribera,Persona
+65,Leyre Lara Díez,Persona
+66,Florina del Bayón,Empresa
+67,Benjamín Wálter Lara Valverde,Persona
+68,Estrella Amor Pintor Aznar,Persona
+69,Gala Martín-Campos,Empresa
+70,Maribel Morata Herrera,Persona
+71,Débora Saavedra Núñez,Persona
+72,Onofre del Vallejo,Empresa
+73,Yolanda Llopis-Navas,Persona
+74,Ciriaco Casal Aller,Persona
+75,Nadia Valderrama Catalán,Empresa
+76,Luna Arnau Sosa,Persona
+77,Bibiana del Pelayo,Persona
+78,Marcelino de Silva,Empresa
+79,Ximena Malo,Persona
+80,Xiomara Alcalá-Montes,Persona
+81,Corona Barros Isern,Empresa
+82,Cesar Horacio Pallarès Rodríguez,Persona
+83,Marcio Alberto Valdés,Persona
+84,Conrado Artigas Leon,Empresa
+85,Caridad Ferrera,Persona
+86,Josep Toribio Solsona Gomez,Persona
+87,Juan Luis Arturo Calderón Salas,Empresa
+88,Magdalena Manuela Losa Ferrero,Persona
+89,Ámbar Bauzà,Persona
+90,Griselda Sanabria Cantero,Empresa
+91,Lucas Roselló Ruano,Persona
+92,Felipa Correa,Persona
+93,Benita Ferreras Galán,Empresa
+94,Alejo de Galindo,Persona
+95,Heriberto Amigó Alba,Persona
+96,Morena Montserrat Andrés,Empresa
+97,Óscar Hoz Ruano,Persona
+98,Ciro Evaristo Capdevila Lumbreras,Persona
+99,Cloe Villalba Amo,Empresa
+100,Roberta Coronado Solano,Persona
+101,Hipólito de Vicens,Persona
+102,Genoveva Fabregat Porta,Empresa
+103,Vito Valdés Arnau,Persona
+104,Buenaventura Jordán Campillo Cases,Persona
+105,Jeremías Osorio Alemany,Empresa
+106,Loreto Osorio Malo,Persona
+107,Clotilde Portero Arévalo,Persona
+108,José Manuel Bustamante Morcillo,Empresa
+109,Rosario Fuster Planas,Persona
+110,Hugo Cases Talavera,Persona
+111,Teodoro Adadia Cámara,Empresa
+112,Fito Antúnez Cabello,Persona
+113,Damián Seco Ros,Persona
+114,Natalio Quiroga,Empresa
+115,Amaro Cordero Carbó,Persona
+116,Obdulia Bosch Cañizares,Persona
+117,Gastón Sabater Fábregas,Empresa
+118,Desiderio del Noguera,Persona
+119,Arsenio Agustí Manzanares,Persona
+120,Nayara Pérez Ojeda,Empresa
+121,Saturnino de Barco,Persona
+122,Ana Sofía de Iborra,Persona
+123,Desiderio Bernardino Abascal Lago,Empresa
+124,Manu Pedro Peláez,Persona
+125,Teo Riera Aragonés,Persona
+126,Ema Felicia Millán Acero,Empresa
+127,Lilia Acedo Mariscal,Persona
+128,Gonzalo Espejo Morell,Persona
+129,Teodora Calvo Fiol,Empresa
+130,Mercedes Bejarano Feliu,Persona
+131,Poncio Palma,Persona
+132,Reyes Terrón Luque,Empresa
+133,Macaria de Ponce,Persona
+134,Eladio Anguita Cuéllar,Persona
+135,Gervasio Espejo,Empresa
+136,Borja Cadenas León,Persona
+137,Victoriano Beltrán Paniagua,Persona
+138,Zacarías Iñiguez Paniagua,Empresa
+139,Edmundo Reig Bru,Persona
+140,Dorita Lorenza Carreras Carrillo,Persona
+141,Eloísa Mendez Sabater,Empresa
+142,Abilio de Carbajo,Persona
+143,Armida Úrsula Sainz Pont,Persona
+144,Nereida Escribano Catalán,Empresa
+145,Abigaíl Ribes Gallego,Persona
+146,Zacarías de Rincón,Persona
+147,Samu Blanes Díaz,Empresa
+148,Débora del Diéguez,Persona
+149,Sarita Mayoral Barón,Persona
+150,Benjamín Prada Larrea,Empresa
+151,Amelia Fabra-Menéndez,Persona
+152,Marc Leocadio Neira Alsina,Persona
+153,Fabio López Folch,Empresa
+154,Cloe Valencia Arrieta,Persona
+155,Ana Sofía Correa Domínguez,Persona
+156,Leonardo Girón Barros,Empresa
+157,Marina Falcó Pérez,Persona
+158,Paca Roura-Patiño,Persona
+159,Severo Garzón Borrás,Empresa
+160,Alondra Merino Anguita,Persona
+161,Nicolás Aranda,Persona
+162,Teófilo Zapata Cabello,Empresa
+163,Silvio Requena Sureda,Persona
+164,Fátima Eva Esparza Quiroga,Persona
+165,Máxima Calleja Bonet,Empresa
+166,Cándido Cornejo Cerdán,Persona
+167,Encarna Patiño-Viana,Persona
+168,Olalla Lago Luque,Empresa
+169,Sonia Espejo Ángel,Persona
+170,Apolonia de Cobo,Persona
+171,Purificación Cadenas,Empresa
+172,Zaida Hoz Tello,Persona
+173,Gilberto Marti Solana,Persona
+174,Miriam Luís Nevado,Empresa
+175,Cesar Ariño,Persona
+176,Amaya Caballero Tudela,Persona
+177,Priscila Robledo Elorza,Empresa
+178,Nando Beltran Guardiola,Persona
+179,Fátima Cerdán-Velázquez,Persona
+180,Rico Torrents Zaragoza,Empresa
+181,Valerio del Naranjo,Persona
+182,María Del Carmen Rico Lastra,Persona
+183,Nicolasa Terrón Egea,Empresa
+184,Aurelio de Villalobos,Persona
+185,Gerónimo Arjona Checa,Persona
+186,Sancho Diego Pujol,Empresa
+187,Rogelio Ibañez Verdugo,Persona
+188,Rolando Torre Vall,Persona
+189,Joel Costa Lloret,Empresa
+190,Nicolasa Vazquez Ródenas,Persona
+191,Anastasio del Sureda,Persona
+192,Esther Arévalo Román,Empresa
+193,Obdulia Borja Morán,Persona
+194,Jordana Alcaraz Cantón,Persona
+195,Pepe Osorio Patiño,Empresa
+196,Reyes Gómez Tamayo,Persona
+197,Nélida Nogueira-Guillen,Persona
+198,Cirino Castañeda Sanchez,Empresa
+199,Saturnino Somoza,Persona
+200,Micaela Alcaraz Olivé,Persona

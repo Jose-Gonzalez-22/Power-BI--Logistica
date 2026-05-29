@@ -4,53 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 884,
+        "x": 672,
         "y": 0
       },
       "nodes": [
         {
           "location": {
-            "x": 954.00000143051147,
-            "y": 255.01686184023913
-          },
-          "nodeIndex": "tabla_almacenes",
-          "nodeLineageTag": "e392e1fc-e0dc-48d7-9523-7674353fa4bf",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 4
-        },
-        {
-          "location": {
-            "x": 1000.6145388191794,
-            "y": 0
-          },
-          "nodeIndex": "tabla_clientes",
-          "nodeLineageTag": "17b86a0d-12c7-48d0-9f70-b5441397c2c0",
-          "size": {
-            "height": 152,
-            "width": 234
-          },
-          "zIndex": 6
-        },
-        {
-          "location": {
-            "x": 0,
-            "y": 0
-          },
-          "nodeIndex": "tabla_productos",
-          "nodeLineageTag": "59f00c64-28ef-42eb-a4b7-b7a42da5cfa1",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 5
-        },
-        {
-          "location": {
-            "x": 0,
-            "y": 318.04129875265107
+            "x": 645,
+            "y": 465.04129875265107
           },
           "nodeIndex": "Fecha",
           "nodeLineageTag": "b4403e2f-6dcd-4d32-a9b0-c31241a5dbd1",
@@ -62,8 +23,8 @@
         },
         {
           "location": {
-            "x": 1284.6145388191794,
-            "y": 412.041298752651
+            "x": 1343.8145414894675,
+            "y": 0
           },
           "nodeIndex": "Medidas",
           "nodeLineageTag": "2f34cabf-a1b3-443b-859e-7d2e6cf51bb9",
@@ -87,26 +48,52 @@
         },
         {
           "location": {
-            "x": 613.61453881917942,
-            "y": 426.02064937632554
+            "x": 1352.6145388191794,
+            "y": 146.01032468816277
           },
-          "nodeIndex": "predicciones_movimientos",
-          "nodeLineageTag": "ebed2ddd-796a-48fe-9a23-c27a04e366a7",
+          "nodeIndex": "Medidas Predicciones",
+          "nodeLineageTag": "52f1609d-a1ef-44fd-84a0-96f4f69f0499",
           "size": {
-            "height": 300,
+            "height": 104,
             "width": 234
           },
           "zIndex": 0
         },
         {
           "location": {
-            "x": 1568.6145388191794,
-            "y": 311.01032468816277
+            "x": 0,
+            "y": 292.02064937632554
           },
-          "nodeIndex": "Medidas Predicciones",
-          "nodeLineageTag": "52f1609d-a1ef-44fd-84a0-96f4f69f0499",
+          "nodeIndex": "almacenes",
+          "nodeLineageTag": "6e0de481-9230-47ad-9f89-a37321c32054",
           "size": {
-            "height": 104,
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "productos",
+          "nodeLineageTag": "dae743da-f04b-4ace-a333-348e7e88051a",
+          "size": {
+            "height": 209,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 574.02064937632554
+          },
+          "nodeIndex": "vendedores",
+          "nodeLineageTag": "5598ba70-7435-4701-95df-88c1d5786aa0",
+          "size": {
+            "height": 128,
             "width": 234
           },
           "zIndex": 0

@@ -55,6 +55,17 @@
           "type": "CustomTheme"
         }
       ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "proyecto6955574726194845.png",
+          "path": "proyecto6955574726194845.png",
+          "type": "Image"
+        }
+      ]
     }
   ],
   "settings": {

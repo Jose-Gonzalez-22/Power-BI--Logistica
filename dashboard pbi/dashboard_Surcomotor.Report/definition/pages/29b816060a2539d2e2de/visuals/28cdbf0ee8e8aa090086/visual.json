@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "28cdbf0ee8e8aa090086",
   "position": {
-    "x": 860.509090909091,
-    "y": 3.4909090909090912,
+    "x": 839.04,
+    "y": 0,
     "z": 3000,
-    "height": 464.29090909090911,
-    "width": 638.83636363636367,
+    "height": 476.15999999999997,
+    "width": 760.31999999999994,
     "tabOrder": 3000
   },
   "visual": {
@@ -20,28 +20,28 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "tabla_productos"
+                      "Entity": "productos"
                     }
                   },
                   "Property": "NOMBRE"
                 }
               },
-              "queryRef": "tabla_productos.NOMBRE",
-              "nativeQueryRef": "NOMBRE"
+              "queryRef": "productos.NOMBRE",
+              "nativeQueryRef": "NOMBRE1"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "tabla_productos"
+                      "Entity": "productos"
                     }
                   },
                   "Property": "FOTO"
                 }
               },
-              "queryRef": "tabla_productos.FOTO",
-              "nativeQueryRef": "FOTO"
+              "queryRef": "productos.FOTO",
+              "nativeQueryRef": "FOTO1"
             },
             {
               "field": {
@@ -193,29 +193,13 @@
           }
         }
       ],
-      "columnWidth": [
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "122.78260869565217D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "tabla_productos.NOMBRE"
-          }
-        }
-      ],
       "values": [
         {
           "properties": {
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
+                  "Value": "14D"
                 }
               }
             }
@@ -426,26 +410,16 @@
           }
         }
       ],
-      "accessibility": [
+      "grid": [
         {
           "properties": {
-            "altTextColumns": {
+            "imageHeight": {
               "expr": {
                 "Literal": {
-                  "Value": "''"
+                  "Value": "110D"
                 }
               }
             }
-          },
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 0
-                }
-              }
-            ],
-            "metadata": "tabla_productos.FOTO"
           }
         }
       ]
@@ -495,12 +469,12 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "3d650e91073424c9ce5c",
+        "name": "e8d76e4994dc230b2edc",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "tabla_productos"
+                "Entity": "productos"
               }
             },
             "Property": "NOMBRE"
@@ -509,12 +483,12 @@
         "type": "Categorical"
       },
       {
-        "name": "57626cafaeaa8d0399be",
+        "name": "d1e8f5eecd8ac17d9a2c",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "tabla_productos"
+                "Entity": "productos"
               }
             },
             "Property": "FOTO"
@@ -523,7 +497,7 @@
         "type": "Categorical"
       },
       {
-        "name": "2319000bbee9dd1f4738",
+        "name": "59705bb372f0895c1fdc",
         "field": {
           "Measure": {
             "Expression": {
@@ -537,7 +511,7 @@
         "type": "Advanced"
       },
       {
-        "name": "fc1b824537ce4eeefde0",
+        "name": "ffd2f896604faddd2a32",
         "field": {
           "Measure": {
             "Expression": {
@@ -551,7 +525,7 @@
         "type": "Advanced"
       },
       {
-        "name": "76483d853823949141cf",
+        "name": "0b64d878049ef044b3f0",
         "field": {
           "Measure": {
             "Expression": {
@@ -565,7 +539,7 @@
         "type": "Advanced"
       },
       {
-        "name": "47c86abc7de28c667644",
+        "name": "6d936a9320e77c785cec",
         "field": {
           "Measure": {
             "Expression": {
@@ -579,7 +553,7 @@
         "type": "Advanced"
       },
       {
-        "name": "e349ca91ef163b4594c8",
+        "name": "b810d8295d91263b84a3",
         "field": {
           "Measure": {
             "Expression": {

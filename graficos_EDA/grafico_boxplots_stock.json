@@ -1,0 +1,194 @@
+[
+  {
+    "config": {
+      "defaultAggregated": false,
+      "geoms": [
+        "boxplot"
+      ],
+      "coordSystem": "generic",
+      "limit": -1,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "fid": "Fecha",
+          "name": "Fecha",
+          "basename": "Fecha",
+          "semanticType": "temporal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "Tipo",
+          "name": "Tipo",
+          "basename": "Tipo",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "Almacen",
+          "name": "Almacen",
+          "basename": "Almacen",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "Producto",
+          "name": "Producto",
+          "basename": "Producto",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal"
+        }
+      ],
+      "measures": [
+        {
+          "fid": "ID_Producto",
+          "name": "ID_Producto",
+          "basename": "ID_Producto",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "Cantidad_Stock",
+          "name": "Cantidad_Stock",
+          "basename": "Cantidad_Stock",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "ID_PRODUCTO",
+          "name": "ID_PRODUCTO",
+          "basename": "ID_PRODUCTO",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          }
+        },
+        {
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum"
+        }
+      ],
+      "rows": [
+        {
+          "fid": "Cantidad_Stock",
+          "name": "Cantidad_Stock",
+          "basename": "Cantidad_Stock",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "color": [
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": [
+              "REPUESTOS"
+            ]
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "fixed",
+        "height": 423,
+        "width": 608
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      },
+      "renderer": "vega-lite"
+    },
+    "visId": "gw_fIe-",
+    "name": "Chart 1"
+  }
+]

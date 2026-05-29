@@ -127,13 +127,16 @@ table Medidas
 		displayFolder: Medidas Inventarios
 		lineageTag: 2e46a8c0-9664-44a2-b8c6-c330701ca6e7
 
-	measure 'Stock Inventario real' =
+	measure 'AUX_Monto Inventario diario' =
 			
 			CALCULATE(
-			    [Cantidad],
-			    movimientos[TipoMovimiento] = "Control"
+			    [Monto],
+			    FILTER(
+			        movimientos,
+			        movimientos[TipoMovimiento] = "Control Stock diario"
+			    )
 			)
-		formatString: 0
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
 		displayFolder: Medidas Inventarios
 		lineageTag: 23f0630a-73cf-4903-b994-cf01d1efa1ae
 
@@ -152,7 +155,7 @@ table Medidas
 			    LASTNONBLANK(
 			        Fecha[Fecha],
 			        CALCULATE(
-			            [Stock Inventario real],
+			            [AUX_Monto Inventario diario],
 			            DATEADD(Fecha[Fecha], -1, DAY)
 			        )
 			    ),
@@ -199,7 +202,7 @@ table Medidas
 			
 			VAR MEDIDA =
 			CALCULATE(
-			    [Stock Inventario real],
+			    [AUX_Monto Inventario diario],
 			    FILTER(
 			        ALL(Fecha),
 			        Fecha[Fecha] == FECHA_ULTIMOINVENTARIO
@@ -211,9 +214,15 @@ table Medidas
 		displayFolder: Medidas Auxiliares
 		lineageTag: 33209e38-b170-4b0d-b5e3-db6fb3b4b1bb
 
-	measure 'Stock Inventario Teórico' =
+	measure 'AUX_Stock Inventario diario' =
 			
-			[AUX_UltimoInventario] + [Movimientos acumulados]
+			CALCULATE(
+			    [Cantidad],
+			    FILTER(
+			        movimientos,
+			        movimientos[TipoMovimiento] = "Control Stock diario"
+			    )
+			)
 		formatString: #,0
 		displayFolder: Medidas Inventarios
 		lineageTag: 65a76b48-ab63-4c77-86b9-8743560cd86b
@@ -236,54 +245,6 @@ table Medidas
 		formatString: #,0
 		lineageTag: 2ec9e530-a664-48f0-8f7b-5224c256e618
 
-	measure AUX_InventarioAnteriorFecha_predicciones =
-			
-			VAR MAX_FECHA = MAX(Fecha[Fecha])
-			
-			VAR ABSMIN_FECHA =
-			CALCULATE(
-			    MIN(Fecha[Fecha]),
-			    ALL(Fecha)
-			)
-			
-			VAR MEDIDA =
-			CALCULATE(
-			    LASTNONBLANK(
-			        Fecha[Fecha],
-			        CALCULATE(
-			            [Stock Inventario predecido (NO DIARIO)],
-			            DATEADD(Fecha[Fecha], -1, DAY)
-			        )
-			    ),
-			    FILTER(
-			        ALL(Fecha),
-			        Fecha[Fecha] <= MAX_FECHA
-			    )
-			)
-			
-			RETURN COALESCE(MEDIDA-1, ABSMIN_FECHA)
-		formatString: Short Date
-		displayFolder: Medidas Auxiliares
-		lineageTag: 4d817381-3d8b-40a6-b0cd-e6d8af9e6316
-
-	measure AUX_UltimoInventario_predicciones =
-			
-			VAR FECHA_ULTIMOINVENTARIO = [AUX_InventarioAnteriorFecha_predicciones]
-			
-			VAR MEDIDA =
-			CALCULATE(
-			    [Stock Inventario predecido (NO DIARIO)],
-			    FILTER(
-			        ALL(Fecha),
-			        Fecha[Fecha] == FECHA_ULTIMOINVENTARIO
-			    )
-			)
-			
-			RETURN MEDIDA
-		formatString: 0
-		displayFolder: Medidas Auxiliares
-		lineageTag: 7b23f388-8863-4ac5-bfdd-89cc83a02faf
-
 	measure AUX_MinimaFechaActual = MIN(Fecha[Fecha])
 		formatString: General Date
 		displayFolder: Medidas Auxiliares
@@ -295,7 +256,7 @@ table Medidas
 			
 			VAR MEDIDA =
 			CALCULATE(
-			    [Stock Inventario Teórico],
+			    [AUX_Stock Inventario diario],
 			    FILTER(
 			        Fecha,
 			        Fecha[Fecha] == FILTRO_FECHA
@@ -313,7 +274,7 @@ table Medidas
 			
 			VAR MEDIDA =
 			CALCULATE(
-			    [Stock Inventario Teórico],
+			    [AUX_Stock Inventario diario],
 			    FILTER(
 			        Fecha,
 			        Fecha[Fecha] == FILTRO_FECHA
@@ -327,7 +288,7 @@ table Medidas
 
 	measure 'Inventario Promedio' =
 			
-			DIVIDE([Inventario Inicial] + [Inventario Final], 2, BLANK())
+			DIVIDE([AUX_Stock Inventario Cierre general], [AUX_Cantidad_dias_Cierre_general], BLANK())
 		formatString: #,0
 		displayFolder: Medidas Inventarios
 		lineageTag: ebd82d38-7e1e-4afc-8746-004164d090fa
@@ -346,6 +307,153 @@ table Medidas
 
 		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
 
+	measure AUX_Cantidad_dias_inventario =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(movimientos[Fecha]),
+			    FILTER(
+			        movimientos,
+			        OR(
+			            movimientos[TipoMovimiento] = "Cierre de Stock general",
+			            movimientos[TipoMovimiento] = "Control Stock diario"
+			        )
+			    )
+			)
+		formatString: 0
+		displayFolder: Medidas Auxiliares
+		lineageTag: 60558fcd-89af-4de2-9db2-3986cf91390a
+
+	measure AUX_Cantidad_dias = DISTINCTCOUNT(Fecha[Fecha])
+		formatString: 0
+		displayFolder: Medidas Auxiliares
+		lineageTag: def8911d-7023-4dc8-92b6-b35e270f53a9
+
+	measure 'AUX_Monto Inventario de Cierre General' =
+			
+			CALCULATE(
+			    [Monto],
+			    FILTER(
+			        movimientos,
+			        movimientos[TipoMovimiento] = "Cierre de Stock general"
+			    )
+			)
+		displayFolder: Medidas Inventarios
+		lineageTag: db0db2d0-465a-4e7e-a53a-7aa71e524516
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure AUX_Cantidad_dias_Cierre_general =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(movimientos[Fecha]),
+			    FILTER(
+			        movimientos,
+			        movimientos[TipoMovimiento] = "Cierre de Stock general"
+			    )
+			)
+		formatString: 0
+		displayFolder: Medidas Auxiliares
+		lineageTag: 9dde037c-fb75-43c2-9ba9-d912367e3e20
+
+	measure 'AUX_Stock Inventario Cierre general' =
+			
+			CALCULATE(
+			    [Cantidad],
+			    FILTER(
+			        movimientos,
+			        movimientos[TipoMovimiento] = "Cierre de Stock general"
+			    )
+			)
+		formatString: 0
+		displayFolder: Medidas Inventarios
+		lineageTag: 84f7c511-9479-49b9-bfb7-8da92a3f8d2c
+
+	measure AUX_PrecioxCantidad = SUMX(movimientos, movimientos[PrecioUnitario]*movimientos[Cantidad])
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: f8f9f94b-b6b4-4016-ba48-dc46211481ae
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-US"}
+
+	measure AUX_CostoxCantidad = SUMX(movimientos, movimientos[CostoUnitario]*movimientos[Cantidad])
+		lineageTag: 2a9cb3a6-2d98-4b26-b769-4d4d66ed2196
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Cantidad de Entradas' =
+			
+			CALCULATE(
+			    [Cantidad],
+			    FILTER(
+			        movimientos,
+			        movimientos[TipoMovimiento] = "Entrada"
+			    )
+			)
+		formatString: 0
+		lineageTag: 3478171c-708d-4b2b-86de-972503ba2717
+
+	measure 'Cantidad de Salidas' =
+			
+			CALCULATE(
+			    [Cantidad],
+			    FILTER(
+			        movimientos,
+			        movimientos[TipoMovimiento] = "Salida"
+			    )
+			)
+		formatString: 0
+		lineageTag: ba2e6ec6-93aa-446b-bb77-5134c94c2a2c
+
+	measure Entradas =
+			
+			CALCULATE(
+			    [AUX_CostoxCantidad],
+			    FILTER(
+			        movimientos,
+			        movimientos[TipoMovimiento] = "Entrada"
+			    )
+			)
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 7b86ebff-610c-4f32-b3e7-479f2c725d66
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-US"}
+
+	measure Salidas =
+			
+			-
+			CALCULATE(
+			    [AUX_PrecioxCantidad],
+			    FILTER(
+			        movimientos,
+			        movimientos[TipoMovimiento] = "Salida"
+			    )
+			)
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 26325455-69c5-4e2f-a89a-6909a654ae73
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-US"}
+
+	measure 'Valor Inventario Final' =
+			
+			VAR FILTRO_FECHA = [AUX_MaximaFechaActual]
+			
+			VAR MEDIDA =
+			CALCULATE(
+			    [AUX_Monto Inventario diario],
+			    FILTER(
+			        Fecha,
+			        Fecha[Fecha] == FILTRO_FECHA
+			    )
+			)
+			
+			RETURN MEDIDA
+		lineageTag: 155aa1da-d904-4c17-9835-e0984188d030
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Ganancias en Inventario' = [Salidas] - [Entradas]
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 896f96f1-517c-4cf3-bd26-f9205092e10c
+
 	partition Medidas = m
 		mode: import
 		source =
@@ -357,4 +465,6 @@ table Medidas
 				    #"Columnas quitadas"
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegación
 

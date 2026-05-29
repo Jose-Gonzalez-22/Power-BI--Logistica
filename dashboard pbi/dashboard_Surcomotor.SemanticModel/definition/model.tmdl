@@ -8,18 +8,17 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["tabla_almacenes","tabla_clientes","tabla_productos","movimientos","predicciones_movimientos","Fecha","Medidas","Medidas Predicciones"]
+annotation PBI_QueryOrder = ["Fecha","Medidas","Medidas Predicciones","almacenes","movimientos","productos","vendedores"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
-ref table tabla_almacenes
-ref table tabla_clientes
-ref table tabla_productos
-ref table movimientos
 ref table Fecha
 ref table Medidas
-ref table predicciones_movimientos
 ref table 'Medidas Predicciones'
+ref table almacenes
+ref table movimientos
+ref table productos
+ref table vendedores
 
 ref cultureInfo es-ES
 

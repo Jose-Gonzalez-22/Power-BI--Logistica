@@ -1,45 +1,10 @@
 table movimientos
-	lineageTag: ce2d471a-e1fa-4e70-b0b9-3b436930d080
-
-	column Fecha
-		dataType: dateTime
-		formatString: Long Date
-		lineageTag: 16f14c59-00c6-4079-bec2-8d74ba088228
-		summarizeBy: none
-		sourceColumn: Fecha
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
-
-	column Almacen
-		dataType: string
-		lineageTag: b827501c-928a-44af-aa82-f9d0f812adb6
-		summarizeBy: none
-		sourceColumn: Almacen
-
-		annotation SummarizationSetBy = Automatic
-
-	column Producto
-		dataType: string
-		lineageTag: a3bd6db7-8ef8-4b54-a53e-cf7858fe449d
-		summarizeBy: none
-		sourceColumn: Producto
-
-		annotation SummarizationSetBy = Automatic
-
-	column Vendedor
-		dataType: string
-		lineageTag: 0db2e112-ac57-4a40-ab83-733e0c3e15c0
-		summarizeBy: none
-		sourceColumn: Vendedor
-
-		annotation SummarizationSetBy = Automatic
+	lineageTag: 6f7baecb-df67-407f-9105-305d4215afa7
 
 	column id_movimiento
 		dataType: int64
 		formatString: 0
-		lineageTag: 5ee9052b-0ec0-4b97-ac49-e26e263b1da4
+		lineageTag: 3fd9fee7-1e33-455e-91fc-47cfb8155b34
 		summarizeBy: sum
 		sourceColumn: id_movimiento
 
@@ -47,42 +12,59 @@ table movimientos
 
 	column TipoMovimiento
 		dataType: string
-		lineageTag: 52105f64-aa4c-4f2f-b517-aea3401e0629
+		lineageTag: 06011c28-f795-409f-a208-188a4c02829e
 		summarizeBy: none
 		sourceColumn: TipoMovimiento
 
 		annotation SummarizationSetBy = Automatic
 
+	column Fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f185aefd-75b0-4999-bbe9-35d33fdc742e
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
 	column Entidad
 		dataType: string
-		lineageTag: 223cc4a6-899f-495d-8ecc-f6afc8790cf9
+		lineageTag: 77817bf5-2356-4357-a381-18985ba267bf
 		summarizeBy: none
 		sourceColumn: Entidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Almacen
+		dataType: string
+		lineageTag: 597e5a10-8faa-47ef-87d0-ed47dd27d602
+		summarizeBy: none
+		sourceColumn: Almacen
+
+		annotation SummarizationSetBy = Automatic
+
+	column Producto
+		dataType: string
+		lineageTag: 0000414c-f259-4e09-8162-3bc8d1e41752
+		summarizeBy: none
+		sourceColumn: Producto
 
 		annotation SummarizationSetBy = Automatic
 
 	column Cantidad
 		dataType: int64
 		formatString: 0
-		lineageTag: ed40f641-60dc-4399-9930-c208de6e6968
+		lineageTag: 8621acf5-a8c5-449c-8cdc-07df016b3242
 		summarizeBy: sum
 		sourceColumn: Cantidad
 
 		annotation SummarizationSetBy = Automatic
 
-	column Monto
-		dataType: double
-		lineageTag: 8e0e6cbb-d83a-4ba9-bdd8-5642019c3939
-		summarizeBy: sum
-		sourceColumn: Monto
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column CostoUnitario
 		dataType: double
-		lineageTag: af5a3132-3d19-4b26-9f29-723efb75150e
+		lineageTag: f2a5f98f-8edc-4a9a-b233-52c634ffa20e
 		summarizeBy: sum
 		sourceColumn: CostoUnitario
 
@@ -92,7 +74,7 @@ table movimientos
 
 	column PrecioUnitario
 		dataType: double
-		lineageTag: 2590f8d4-fe3b-42ba-98cd-fd90be67eb13
+		lineageTag: 1b8d8bbe-5a2d-41ae-8891-1ed726c48004
 		summarizeBy: sum
 		sourceColumn: PrecioUnitario
 
@@ -100,16 +82,30 @@ table movimientos
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column Monto
+		dataType: double
+		lineageTag: ae5db9cf-c0f6-4cfa-b408-1da7a21473b2
+		summarizeBy: sum
+		sourceColumn: Monto
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Vendedor
+		dataType: string
+		lineageTag: 5cd5f4c7-7ce3-4662-9a9c-6077d295003a
+		summarizeBy: none
+		sourceColumn: Vendedor
+
+		annotation SummarizationSetBy = Automatic
+
 	partition movimientos = m
 		mode: import
 		source =
 				let
 				    Origen = Sql.Database("LAPTOP-OFP910OT", "Surcomotor_DB"),
-				    dbo_tabla_ventas = Origen{[Schema="dbo",Item="movimientos"]}[Data]
+				    dbo_movimientos = Origen{[Schema="dbo",Item="movimientos"]}[Data]
 				in
-				    dbo_tabla_ventas
-
-	annotation PBI_ResultType = Table
-
-	annotation PBI_NavigationStepName = Navegación
+				    dbo_movimientos
 

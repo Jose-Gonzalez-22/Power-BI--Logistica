@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "7ff8ef472581c829ec68",
   "position": {
-    "x": 0,
-    "y": 476.50909090909096,
+    "x": 241.92,
+    "y": 476.15999999999997,
     "z": 8000,
-    "height": 523.63636363636363,
-    "width": 1499.3454545454547,
+    "height": 624,
+    "width": 1357.4399999999998,
     "tabOrder": 8000
   },
   "visual": {
@@ -89,7 +89,7 @@
             "jsonSpec": {
               "expr": {
                 "Literal": {
-                  "Value": "'{\n  \"$schema\": \"https://vega.github.io/schema/vega-lite/v5.json\",\n  \"data\": { \"name\": \"dataset\" },\n  \"title\": \"Margen por Mes\",\n  \"width\": \"container\",\n  \"height\": 400,\n  \"resolve\": {\n    \"scale\": { \"y\": \"independent\" }\n  },\n  \"layer\": [\n    {\n      \"layer\": [\n        {\n          \"transform\": [\n            { \"calculate\": \"datum.Ventas/1000\", \"as\": \"Ventas_k\" }\n          ],\n          \"mark\": {\n            \"type\": \"area\",\n            \"fill\": \"#66c2a5\",\n            \"fillOpacity\": 0.3,\n            \"stroke\": \"#2ca02c\",\n            \"strokeWidth\": 2,\n            \"line\": true,\n            \"point\": false\n          },\n          \"encoding\": {\n            \"x\": {\n              \"field\": \"aaaa-mmm\",\n              \"type\": \"ordinal\",\n              \"title\": null,\n              \"sort\": false\n            },\n            \"y\": {\n              \"field\": \"Ventas_k\",\n              \"type\": \"quantitative\",\n              \"axis\": {\n                \"title\": \"Miles de Dólares\",\n                \"titleColor\": \"#333\",\n                \"labelColor\": \"#555\",\n                \"format\": \"$,.0f\"\n              }\n            }\n          }\n        },\n        {\n          \"transform\": [\n            { \"calculate\": \"datum[''Costo de Ventas'']/1000\", \"as\": \"Costos_k\" }\n          ],\n          \"mark\": {\n            \"type\": \"area\",\n            \"fill\": \"#fc8d62\",\n            \"fillOpacity\": 0.3,\n            \"stroke\": \"#d62728\",\n            \"strokeWidth\": 2,\n            \"line\": true,\n            \"point\": false\n          },\n          \"encoding\": {\n            \"x\": {\n              \"field\": \"aaaa-mmm\",\n              \"type\": \"ordinal\",\n              \"sort\": false\n            },\n            \"y\": {\n              \"field\": \"Costos_k\",\n              \"type\": \"quantitative\"\n            }\n          }\n        }\n      ],\n      \"resolve\": {\n        \"scale\": { \"y\": \"shared\" }\n      }\n    },\n    {\n      \"mark\": {\n        \"type\": \"bar\",\n        \"color\": \"#3182bd\",\n        \"width\": { \"band\": 0.6 },\n        \"tooltip\": true\n      },\n      \"encoding\": {\n        \"x\": {\n          \"field\": \"aaaa-mmm\",\n          \"type\": \"ordinal\",\n          \"title\": null,\n          \"sort\": false\n        },\n        \"y\": {\n          \"field\": \"% Margen de Ventas\",\n          \"type\": \"quantitative\",\n          \"axis\": null,\n          \"scale\": {\n            \"domain\": [0, 1]\n          }\n        },\n        \"tooltip\": [\n          { \"field\": \"aaaa-mmm\", \"type\": \"ordinal\", \"title\": \"Mes:\" },\n          { \"field\": \"Ventas\", \"type\": \"quantitative\", \"title\": \"Ventas:\", \"format\": \"$,.0f\" },\n          { \"field\": \"Costo de Ventas\", \"type\": \"quantitative\", \"title\": \"Costos:\", \"format\": \"$,.0f\" },\n          { \"field\": \"% Margen de Ventas\", \"type\": \"quantitative\", \"title\": \"% Margen:\", \"format\": \".0%\" }\n        ]\n      }\n    },\n    {\n      \"mark\": {\n        \"type\": \"text\",\n        \"dy\": -8,\n        \"fontWeight\": \"bold\",\n        \"fontSize\": 12\n      },\n      \"encoding\": {\n        \"x\": {\n          \"field\": \"aaaa-mmm\",\n          \"type\": \"ordinal\",\n          \"sort\": false\n        },\n        \"y\": {\n          \"field\": \"% Margen de Ventas\",\n          \"type\": \"quantitative\"\n        },\n        \"text\": {\n          \"field\": \"% Margen de Ventas\",\n          \"format\": \".0%\"\n        },\n        \"color\": {\n          \"condition\": [\n            {\n              \"test\": \"datum[''% Margen de Ventas''] > 0.35\",\n              \"value\": \"#2ca02c\"\n            },\n            {\n              \"test\": \"datum[''% Margen de Ventas''] < 0.10\",\n              \"value\": \"#d62728\"\n            }\n          ],\n          \"value\": \"black\"\n        }\n      }\n    }\n  ]\n}'"
+                  "Value": "'{\n  \"$schema\": \"https://vega.github.io/schema/vega-lite/v5.json\",\n  \"data\": { \"name\": \"dataset\" },\n  \"title\": \"Margen por Mes\",\n  \"width\": \"container\",\n  \"height\": 470,\n  \"config\": {\n    \"locale\": {\n      \"currency\": [\"$\"]\n    },\n    \"axis\": {\n      \"labelFontSize\": 14,\n      \"titleFontSize\": 16\n    },\n    \"legend\": {\n      \"labelFontSize\": 12,\n      \"titleFontSize\": 12\n    }\n  },\n  \"resolve\": {\n    \"scale\": { \"y\": \"independent\" }\n  },\n  \"layer\": [\n    {\n      \"layer\": [\n        {\n          \"transform\": [\n            { \"calculate\": \"datum.Ventas/1000\", \"as\": \"Ventas_k\" },\n            { \"calculate\": \"''Ingresos''\", \"as\": \"Tipo\" }\n          ],\n          \"mark\": {\n            \"type\": \"area\",\n            \"fillOpacity\": 0.3,\n            \"stroke\": \"#2ca02c\",\n            \"strokeWidth\": 2,\n            \"line\": true,\n            \"point\": false\n          },\n          \"encoding\": {\n            \"x\": {\n              \"field\": \"aaaa-mmm\",\n              \"type\": \"ordinal\",\n              \"title\": null,\n              \"sort\": false\n            },\n            \"y\": {\n              \"field\": \"Ventas_k\",\n              \"type\": \"quantitative\",\n              \"axis\": {\n                \"title\": \"Miles de Dólares US$\",\n                \"titleColor\": \"#333\",\n                \"labelColor\": \"#555\",\n                \"format\": \",.0f\"\n              }\n            },\n            \"color\": {\n              \"field\": \"Tipo\",\n              \"type\": \"nominal\",\n              \"scale\": {\n                \"domain\": [\"Ingresos\", \"Costos\", \"% Margen\"],\n                \"range\": [\"#2ca02c\", \"#d62728\", \"#3182bd\"]\n              },\n              \"legend\": { \"title\": null }\n            }\n          }\n        },\n        {\n          \"transform\": [\n            { \"calculate\": \"datum[''Costo de Ventas'']/1000\", \"as\": \"Costos_k\" },\n            { \"calculate\": \"''Costos''\", \"as\": \"Tipo\" }\n          ],\n          \"mark\": {\n            \"type\": \"area\",\n            \"fillOpacity\": 0.3,\n            \"stroke\": \"#d62728\",\n            \"strokeWidth\": 2,\n            \"line\": true,\n            \"point\": false\n          },\n          \"encoding\": {\n            \"x\": {\n              \"field\": \"aaaa-mmm\",\n              \"type\": \"ordinal\",\n              \"sort\": false\n            },\n            \"y\": {\n              \"field\": \"Costos_k\",\n              \"type\": \"quantitative\"\n            },\n            \"color\": {\n              \"field\": \"Tipo\",\n              \"type\": \"nominal\"\n            }\n          }\n        }\n      ],\n      \"resolve\": {\n        \"scale\": { \"y\": \"shared\" }\n      }\n    },\n    {\n      \"transform\": [\n        { \"calculate\": \"''% Margen''\", \"as\": \"Tipo\" }\n      ],\n      \"mark\": {\n        \"type\": \"bar\",\n        \"width\": { \"band\": 0.6 },\n        \"tooltip\": true\n      },\n      \"encoding\": {\n        \"x\": {\n          \"field\": \"aaaa-mmm\",\n          \"type\": \"ordinal\",\n          \"title\": null,\n          \"sort\": false\n        },\n        \"y\": {\n          \"field\": \"% Margen de Ventas\",\n          \"type\": \"quantitative\",\n          \"axis\": null,\n          \"scale\": {\n            \"domain\": [0, 1]\n          }\n        },\n        \"color\": {\n          \"field\": \"Tipo\",\n          \"type\": \"nominal\"\n        },\n        \"tooltip\": [\n          { \"field\": \"aaaa-mmm\", \"type\": \"ordinal\", \"title\": \"Mes:\" },\n          { \"field\": \"Ventas\", \"type\": \"quantitative\", \"title\": \"Ventas:\", \"format\": \",.0f\" },\n          { \"field\": \"Costo de Ventas\", \"type\": \"quantitative\", \"title\": \"Costos:\", \"format\": \",.0f\" },\n          { \"field\": \"% Margen de Ventas\", \"type\": \"quantitative\", \"title\": \"% Margen:\", \"format\": \".0%\" }\n        ]\n      }\n    },\n    {\n      \"mark\": {\n        \"type\": \"text\",\n        \"dy\": -8,\n        \"fontWeight\": \"bold\",\n        \"fontSize\": 14\n      },\n      \"encoding\": {\n        \"x\": {\n          \"field\": \"aaaa-mmm\",\n          \"type\": \"ordinal\",\n          \"sort\": false\n        },\n        \"y\": {\n          \"field\": \"% Margen de Ventas\",\n          \"type\": \"quantitative\"\n        },\n        \"text\": {\n          \"field\": \"% Margen de Ventas\",\n          \"format\": \".0%\"\n        },\n        \"color\": {\n          \"condition\": [\n            {\n              \"test\": \"datum[''% Margen de Ventas''] > 0.35\",\n              \"value\": \"#2ca02c\"\n            },\n            {\n              \"test\": \"datum[''% Margen de Ventas''] < 0.10\",\n              \"value\": \"#d62728\"\n            }\n          ],\n          \"value\": \"black\"\n        }\n      }\n    }\n  ]\n}'"
                 }
               }
             },
@@ -158,14 +158,14 @@
             "viewportHeight": {
               "expr": {
                 "Literal": {
-                  "Value": "513.6363636363636D"
+                  "Value": "614D"
                 }
               }
             },
             "viewportWidth": {
               "expr": {
                 "Literal": {
-                  "Value": "1489.3454545454547D"
+                  "Value": "1347.4399999999998D"
                 }
               }
             }
@@ -184,68 +184,28 @@
             }
           }
         }
+      ],
+      "editor": [
+        {
+          "properties": {
+            "theme": {
+              "expr": {
+                "Literal": {
+                  "Value": "'dark'"
+                }
+              }
+            },
+            "showViewportMarker": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f1a197aed946eab5fb0e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Ventas"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "e34042573f289ae3e1de",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Costo de Ventas"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5746c8f1006cd9473544",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "% Margen de Ventas"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "60f3a0dc82546e457b1b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fecha"
-              }
-            },
-            "Property": "aaaa-mmm"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

@@ -1,0 +1,707 @@
+[
+  {
+    "config": {
+      "defaultAggregated": false,
+      "geoms": [
+        "boxplot"
+      ],
+      "coordSystem": "generic",
+      "limit": -1,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "fid": "fecha",
+          "name": "fecha",
+          "basename": "fecha",
+          "semanticType": "temporal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "id_proveedor",
+          "name": "id_proveedor",
+          "basename": "id_proveedor",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "proveedor",
+          "name": "proveedor",
+          "basename": "proveedor",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "id_almacen",
+          "name": "id_almacen",
+          "basename": "id_almacen",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "almacen",
+          "name": "almacen",
+          "basename": "almacen",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "producto",
+          "name": "producto",
+          "basename": "producto",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal"
+        }
+      ],
+      "measures": [
+        {
+          "fid": "id_compra",
+          "name": "id_compra",
+          "basename": "id_compra",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "id_producto",
+          "name": "id_producto",
+          "basename": "id_producto",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "cantidad",
+          "name": "cantidad",
+          "basename": "cantidad",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "precio_compra",
+          "name": "precio_compra",
+          "basename": "precio_compra",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "monto",
+          "name": "monto",
+          "basename": "monto",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "ID_PRODUCTO",
+          "name": "ID_PRODUCTO",
+          "basename": "ID_PRODUCTO",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          }
+        },
+        {
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum"
+        }
+      ],
+      "rows": [
+        {
+          "fid": "cantidad",
+          "name": "cantidad",
+          "basename": "cantidad",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "color": [
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": [
+              "REPUESTOS"
+            ]
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "fixed",
+        "height": 410,
+        "width": 593
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      },
+      "renderer": "vega-lite"
+    },
+    "visId": "gw_Bh34",
+    "name": "Chart 1"
+  },
+  {
+    "config": {
+      "defaultAggregated": false,
+      "geoms": [
+        "boxplot"
+      ],
+      "coordSystem": "generic",
+      "limit": -1,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "fid": "fecha",
+          "name": "fecha",
+          "basename": "fecha",
+          "semanticType": "temporal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "id_proveedor",
+          "name": "id_proveedor",
+          "basename": "id_proveedor",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "proveedor",
+          "name": "proveedor",
+          "basename": "proveedor",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "id_almacen",
+          "name": "id_almacen",
+          "basename": "id_almacen",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "almacen",
+          "name": "almacen",
+          "basename": "almacen",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "producto",
+          "name": "producto",
+          "basename": "producto",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal"
+        }
+      ],
+      "measures": [
+        {
+          "fid": "id_compra",
+          "name": "id_compra",
+          "basename": "id_compra",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "id_producto",
+          "name": "id_producto",
+          "basename": "id_producto",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "cantidad",
+          "name": "cantidad",
+          "basename": "cantidad",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "precio_compra",
+          "name": "precio_compra",
+          "basename": "precio_compra",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "monto",
+          "name": "monto",
+          "basename": "monto",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "ID_PRODUCTO",
+          "name": "ID_PRODUCTO",
+          "basename": "ID_PRODUCTO",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          }
+        },
+        {
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum"
+        }
+      ],
+      "rows": [
+        {
+          "fid": "precio_compra",
+          "name": "precio_compra",
+          "basename": "precio_compra",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "color": [
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": [
+              "REPUESTOS"
+            ]
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "fixed",
+        "width": 656,
+        "height": 410
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      },
+      "renderer": "vega-lite"
+    },
+    "visId": "gw_uqS-",
+    "name": "Chart 2"
+  },
+  {
+    "config": {
+      "defaultAggregated": false,
+      "geoms": [
+        "boxplot"
+      ],
+      "coordSystem": "generic",
+      "limit": -1,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "fid": "fecha",
+          "name": "fecha",
+          "basename": "fecha",
+          "semanticType": "temporal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "id_proveedor",
+          "name": "id_proveedor",
+          "basename": "id_proveedor",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "proveedor",
+          "name": "proveedor",
+          "basename": "proveedor",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "id_almacen",
+          "name": "id_almacen",
+          "basename": "id_almacen",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "almacen",
+          "name": "almacen",
+          "basename": "almacen",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "producto",
+          "name": "producto",
+          "basename": "producto",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal"
+        }
+      ],
+      "measures": [
+        {
+          "fid": "id_compra",
+          "name": "id_compra",
+          "basename": "id_compra",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "id_producto",
+          "name": "id_producto",
+          "basename": "id_producto",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "cantidad",
+          "name": "cantidad",
+          "basename": "cantidad",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "precio_compra",
+          "name": "precio_compra",
+          "basename": "precio_compra",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "monto",
+          "name": "monto",
+          "basename": "monto",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "ID_PRODUCTO",
+          "name": "ID_PRODUCTO",
+          "basename": "ID_PRODUCTO",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          }
+        },
+        {
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum"
+        }
+      ],
+      "rows": [
+        {
+          "fid": "monto",
+          "name": "monto",
+          "basename": "monto",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "color": [
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "not in",
+            "value": [
+              "REPUESTOS"
+            ]
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "fixed",
+        "height": 504,
+        "width": 656
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      },
+      "renderer": "vega-lite"
+    },
+    "visId": "gw_PJWH",
+    "name": "Chart 3"
+  }
+]

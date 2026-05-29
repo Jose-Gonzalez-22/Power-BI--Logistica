@@ -1,0 +1,55 @@
+table almacenes
+	lineageTag: 6e0de481-9230-47ad-9f89-a37321c32054
+
+	column id_almacen
+		dataType: int64
+		formatString: 0
+		lineageTag: 6762aea9-a5d7-4a8e-b268-726cda7c7993
+		summarizeBy: none
+		sourceColumn: id_almacen
+
+		annotation SummarizationSetBy = Automatic
+
+	column almacen
+		dataType: string
+		lineageTag: 1269082c-bfe5-4468-ab78-567f135f51c1
+		summarizeBy: none
+		sourceColumn: almacen
+
+		annotation SummarizationSetBy = Automatic
+
+	column capacidad_vehiculos
+		dataType: int64
+		formatString: 0
+		lineageTag: 060b1907-1277-4fce-bbe5-e517daec5fe4
+		summarizeBy: none
+		sourceColumn: capacidad_vehiculos
+
+		annotation SummarizationSetBy = Automatic
+
+	column capacidad_repuestos
+		dataType: int64
+		formatString: 0
+		lineageTag: 3edbcef9-7688-45a9-ab59-048d0b331be0
+		summarizeBy: none
+		sourceColumn: capacidad_repuestos
+
+		annotation SummarizationSetBy = Automatic
+
+	column ubicacion
+		dataType: string
+		lineageTag: 73227cc2-be32-460e-88f6-ace848e15399
+		summarizeBy: none
+		sourceColumn: ubicacion
+
+		annotation SummarizationSetBy = Automatic
+
+	partition almacenes = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("LAPTOP-OFP910OT", "Surcomotor_DB"),
+				    dbo_almacenes = Origen{[Schema="dbo",Item="almacenes"]}[Data]
+				in
+				    dbo_almacenes
+

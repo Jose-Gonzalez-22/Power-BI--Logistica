@@ -1,0 +1,362 @@
+[
+  {
+    "config": {
+      "defaultAggregated": true,
+      "geoms": [
+        "bar"
+      ],
+      "coordSystem": "generic",
+      "limit": -1,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "fid": "año",
+          "name": "año",
+          "basename": "año",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "mes",
+          "name": "mes",
+          "basename": "mes",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "año_mes",
+          "name": "año_mes",
+          "basename": "año_mes",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal"
+        }
+      ],
+      "measures": [
+        {
+          "fid": "cantidad_total",
+          "name": "cantidad_total",
+          "basename": "cantidad_total",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "monto_total",
+          "name": "monto_total",
+          "basename": "monto_total",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "costo_prom_pond",
+          "name": "costo_prom_pond",
+          "basename": "costo_prom_pond",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          }
+        },
+        {
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum"
+        }
+      ],
+      "rows": [
+        {
+          "fid": "monto_total",
+          "name": "monto_total",
+          "basename": "monto_total",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "fid": "año_mes",
+          "name": "año_mes",
+          "basename": "año_mes",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "color": [],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "fid": "año",
+          "name": "año",
+          "basename": "año",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "range",
+            "value": [
+              2023,
+              2025
+            ]
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "auto",
+        "width": 320,
+        "height": 200
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      },
+      "renderer": "vega-lite"
+    },
+    "visId": "gw_-lRi",
+    "name": "Chart 1"
+  },
+  {
+    "config": {
+      "defaultAggregated": true,
+      "geoms": [
+        "bar"
+      ],
+      "coordSystem": "generic",
+      "limit": -1,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "fid": "año",
+          "name": "año",
+          "basename": "año",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "mes",
+          "name": "mes",
+          "basename": "mes",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "año_mes",
+          "name": "año_mes",
+          "basename": "año_mes",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "TIPO",
+          "name": "TIPO",
+          "basename": "TIPO",
+          "semanticType": "nominal",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal"
+        }
+      ],
+      "measures": [
+        {
+          "fid": "cantidad_total",
+          "name": "cantidad_total",
+          "basename": "cantidad_total",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "monto_total",
+          "name": "monto_total",
+          "basename": "monto_total",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "costo_prom_pond",
+          "name": "costo_prom_pond",
+          "basename": "costo_prom_pond",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          }
+        },
+        {
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum"
+        }
+      ],
+      "rows": [
+        {
+          "fid": "monto_total",
+          "name": "monto_total",
+          "basename": "monto_total",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "fid": "año",
+          "name": "año",
+          "basename": "año",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0
+        },
+        {
+          "fid": "mes",
+          "name": "mes",
+          "basename": "mes",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0
+        }
+      ],
+      "color": [],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "fid": "año",
+          "name": "año",
+          "basename": "año",
+          "semanticType": "quantitative",
+          "analyticType": "dimension",
+          "offset": 0,
+          "rule": {
+            "type": "range",
+            "value": [
+              2024,
+              2025
+            ]
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "auto",
+        "width": 320,
+        "height": 200
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      },
+      "renderer": "vega-lite"
+    },
+    "visId": "gw_yOAj",
+    "name": "Chart 2"
+  }
+]

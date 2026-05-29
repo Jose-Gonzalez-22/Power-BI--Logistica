@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "fc2db0e15e60c6ca39a7",
   "position": {
-    "x": 23.48376762025714,
-    "y": 169.67390667132071,
+    "x": 30.72,
+    "y": 209.27999999999997,
     "z": 2000,
-    "height": 82.983050847457619,
-    "width": 178.9830508474576,
+    "height": 90.24,
+    "width": 180.48,
     "tabOrder": 2000
   },
   "visual": {
@@ -78,6 +78,13 @@
                   }
                 }
               }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
             }
           }
         }
@@ -106,6 +113,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
                 }
               }
             }
@@ -237,6 +251,29 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "Año",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "bb65114fbe0f23db0c43",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fecha"
+              }
+            },
+            "Property": "Año"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

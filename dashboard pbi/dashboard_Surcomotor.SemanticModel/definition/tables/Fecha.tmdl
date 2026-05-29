@@ -6,7 +6,7 @@ table Fecha
 		dataType: int64
 		formatString: 0
 		lineageTag: 4f220bc3-5985-431a-907e-11230b47d7cb
-		summarizeBy: count
+		summarizeBy: none
 		sourceColumn: FechaKey
 
 		annotation SummarizationSetBy = Automatic
@@ -27,7 +27,7 @@ table Fecha
 		dataType: int64
 		formatString: 0
 		lineageTag: 77047474-6e25-4f57-a606-be2fe89e5694
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Año
 
 		annotation SummarizationSetBy = Automatic
@@ -36,7 +36,7 @@ table Fecha
 		dataType: int64
 		formatString: 0
 		lineageTag: 018213ce-914c-4e30-9dd9-71d3fb4c7d32
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Periodo
 
 		annotation SummarizationSetBy = Automatic
@@ -89,7 +89,7 @@ table Fecha
 		dataType: int64
 		formatString: 0
 		lineageTag: e1146fda-6bcb-42b6-831d-ace73bbf36b7
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Dia
 
 		annotation SummarizationSetBy = Automatic
@@ -131,7 +131,7 @@ table Fecha
 		dataType: int64
 		formatString: 0
 		lineageTag: 6e3cec24-8b27-4d8d-ad70-2d59b916b63b
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Orden Trimestre
 
 		annotation SummarizationSetBy = Automatic
@@ -140,7 +140,7 @@ table Fecha
 		dataType: int64
 		formatString: 0
 		lineageTag: 6d36566d-b433-4a8e-9898-a42815640b43
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Orden Mes
 
 		annotation SummarizationSetBy = Automatic
@@ -149,7 +149,7 @@ table Fecha
 		dataType: int64
 		formatString: 0
 		lineageTag: e56da89a-a3c1-4411-90e9-7f1265449e4e
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Orden Dia Semana
 
 		annotation SummarizationSetBy = Automatic

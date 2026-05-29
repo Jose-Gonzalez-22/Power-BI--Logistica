@@ -1,0 +1,58 @@
+table productos
+	lineageTag: dae743da-f04b-4ace-a333-348e7e88051a
+
+	column ID_PRODUCTO
+		dataType: int64
+		formatString: 0
+		lineageTag: f0c4d5a6-f89d-4118-abfe-64258b176612
+		summarizeBy: none
+		sourceColumn: ID_PRODUCTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESCRIPCIÓN
+		dataType: string
+		lineageTag: 960a9082-97ad-40d8-b686-de8a159da48c
+		summarizeBy: none
+		sourceColumn: DESCRIPCIÓN
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE
+		dataType: string
+		lineageTag: e1f3e710-5816-41fb-b23d-4749adfa87cf
+		summarizeBy: none
+		sourceColumn: NOMBRE
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPO
+		dataType: string
+		lineageTag: cefe87c9-2e8f-46c5-a4bf-73e24f60510e
+		summarizeBy: none
+		sourceColumn: TIPO
+
+		annotation SummarizationSetBy = Automatic
+
+	column FOTO
+		dataType: string
+		lineageTag: 4f91bfbc-1659-4bc1-a726-4e136bca0296
+		dataCategory: ImageUrl
+		summarizeBy: none
+		sourceColumn: FOTO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition productos = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("LAPTOP-OFP910OT", "Surcomotor_DB"),
+				    dbo_productos = Origen{[Schema="dbo",Item="productos"]}[Data]
+				in
+				    dbo_productos
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

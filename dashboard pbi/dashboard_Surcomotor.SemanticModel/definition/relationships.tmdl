@@ -1,28 +1,16 @@
-relationship AutoDetected_51f87d2a-9d79-4cec-911b-b1b11248b58d
+relationship AutoDetected_6d38ecc4-ae2d-4eaf-b501-136edcf663b0
 	fromColumn: movimientos.Almacen
-	toColumn: tabla_almacenes.almacen
+	toColumn: almacenes.almacen
 
-relationship 9f938b30-9303-e7ca-beaa-d61cb3c10c6c
+relationship 6222ca49-b2c8-aade-93e2-bdec583bae89
+	fromColumn: movimientos.Producto
+	toColumn: productos.DESCRIPCIÓN
+
+relationship 9ebc5d7b-cf36-4521-03b0-e510d2f85806
+	fromColumn: movimientos.Vendedor
+	toColumn: vendedores.nombre
+
+relationship 84577399-734e-4339-4569-5c09e9b546fb
 	fromColumn: movimientos.Fecha
 	toColumn: Fecha.Fecha
-
-relationship 33a9fbad-a2d1-9820-2ed7-0add95c00eb7
-	fromColumn: movimientos.Producto
-	toColumn: tabla_productos.DESCRIPCIÓN
-
-relationship ba8a004b-ec3d-dda2-5151-7e6470c84d55
-	fromColumn: movimientos.Entidad
-	toColumn: tabla_clientes.Cliente
-
-relationship AutoDetected_a8571a08-e282-40c9-a2cb-3d7283baf134
-	fromColumn: predicciones_movimientos.Almacen
-	toColumn: tabla_almacenes.almacen
-
-relationship ee448af2-5526-29dd-92f0-4d73eb8765c7
-	fromColumn: predicciones_movimientos.Fecha
-	toColumn: Fecha.Fecha
-
-relationship f7a8f5b1-2593-64bc-b10e-bc1c87694be9
-	fromColumn: predicciones_movimientos.Producto
-	toColumn: tabla_productos.DESCRIPCIÓN
 

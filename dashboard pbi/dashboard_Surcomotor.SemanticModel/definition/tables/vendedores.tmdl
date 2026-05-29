@@ -1,0 +1,33 @@
+table vendedores
+	lineageTag: 5598ba70-7435-4701-95df-88c1d5786aa0
+
+	column id_vendedor
+		dataType: int64
+		formatString: 0
+		lineageTag: e74e9e83-1fad-45a4-9dd5-9b6b44a415b4
+		summarizeBy: none
+		sourceColumn: id_vendedor
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre
+		dataType: string
+		lineageTag: d3e8ce58-0c12-444f-a875-c10e1141c6dd
+		summarizeBy: none
+		sourceColumn: nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vendedores = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("LAPTOP-OFP910OT", "Surcomotor_DB"),
+				    dbo_vendedores = Origen{[Schema="dbo",Item="vendedores"]}[Data]
+				in
+				    dbo_vendedores
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

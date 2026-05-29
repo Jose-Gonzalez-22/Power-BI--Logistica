@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "ce59ed9a5784c170a26e",
   "position": {
-    "x": 23.48376762025714,
-    "y": 63.368821925557484,
+    "x": 30.72,
+    "y": 82.559999999999988,
     "z": 4000,
-    "height": 81.355932203389827,
-    "width": 178.9830508474576,
+    "height": 90.24,
+    "width": 180.48,
     "tabOrder": 4000
   },
   "visual": {
@@ -78,6 +78,13 @@
                   }
                 }
               }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
             }
           }
         }
@@ -106,6 +113,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
                 }
               }
             }
@@ -195,12 +209,17 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "Mes",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "9469c0dbfaa822e3fbf9",
+        "name": "1a033a793c0b7cb87bcd",
         "field": {
           "Column": {
             "Expression": {
